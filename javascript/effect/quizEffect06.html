@@ -195,7 +195,7 @@ const updateQuiz = (index) => {
 
     const quizChoice = quizSelects.querySelectorAll(".choice");
 
-    for (let i = 0; i < quizChoice.length; i++) {
+    for (let i = 0; i &lt; quizChoice.length; i++) {
         quizChoice[i].setAttribute("onclick", "choiceSelected(this)");
     }
 
@@ -1217,10 +1217,10 @@ quizConfirm.addEventListener("click", answerQuiz);
                 answerNum: "58",
                 answerAsk: "픽셀은 정사각형 모양이고, 이미지를 확대하면 이미지 경계가 계단 형식으로 표현되며, 계단 형식으로 표시되는 이미지 경계의 픽셀을 부드럽게 만드는 것을 의미하는 것은?",
                 answerChoice: [
-                    1: "앨리어싱(Aliasing)",
-                    2: "안티-앨리어싱(Anti-Aliasing)",
-                    3: "패더(Feather)",
-                    4: "스타일(Style)",
+                    "앨리어싱(Aliasing)",
+                    "안티-앨리어싱(Anti-Aliasing)",
+                    "패더(Feather)",
+                    "스타일(Style)",
                 ],
                 answerResult: "2",
                 answerEx: "안티앨리어싱은 그래픽의 계단현상(앨리어싱)을 제거(안티) 하기 위한 용도로 활용되는 기술입니다."
@@ -1230,10 +1230,10 @@ quizConfirm.addEventListener("click", answerQuiz);
                 answerNum: "59",
                 answerAsk: "두 개의 서로 다른 이미지나 3차원 모델 사이의 변화하는 과정을 서서히 나타내는 것은?",
                 answerChoice: [
-                    1: "모핑",
-                    2: "로토스코핑",
-                    3: "미립자 시스템 ",
-                    4: "중첩 액션",
+                   "모핑",
+                   "로토스코핑",
+                   "미립자 시스템 ",
+                   "중첩 액션",
                 ],
                 answerResult: "1",
                 answerEx: "모핑(Morphing)은 하나의 형체가 전혀 다른 이미지로 변화하는 기법입니다."
@@ -1243,10 +1243,10 @@ quizConfirm.addEventListener("click", answerQuiz);
                 answerNum: "60",
                 answerAsk: "시각 디자인 영역의 한 영역이며 글자체, 글자크기, 행간, 여백, 간격, 단락, 그리드 등을 통해 전달되는 것은 무엇에 대한 활용인가?",
                 answerChoice: [
-                    1: "내비게이션 디자인(Navigation Design)",
-                    2: "웹 타이포그래피 디자인(Web Typographic Design)",
-                    3: "웹 컬러 디자인(Web Color Design)",
-                    4: "웹 인터페이스 디자인(Web Interface Design)",
+                    "내비게이션 디자인(Navigation Design)",
+                    "웹 타이포그래피 디자인(Web Typographic Design)",
+                    "웹 컬러 디자인(Web Color Design)",
+                    "웹 인터페이스 디자인(Web Interface Design)",
                 ],
                 answerResult: "2",
                 answerEx: "다른 글자와 구별되는 그 글자의 형태를 '폰트'(서체) 라고 하며, 글자와 글자가 위치한 공간, 레이아웃된 모양 등 글자로 디자인된 상태를 모두 폭 넓게 타이포그라피라고 정의합니다."

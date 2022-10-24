@@ -65,158 +65,158 @@
                             <div class="main">
                                 <div class="active">
                                     <pre><code class="language-js">//문제 정보
-                                        const quizInfo = [
-                                            {
-                                                answerType: "웹디자인기능사 2011년 1회",
-                                                answerNum: "1",
-                                                answerAsk: "건강 이미지의 웹사이트를 구성하려고 한다. 가장 적합한 컬러는?",
-                                                answerChoice: {
-                                                    1: "빨강색",
-                                                    2: "노랑색",
-                                                    3: "검정색",
-                                                    4: "녹색",
-                                                },
-                                                answerResult: "4",
-                                                answerEx: "초록은 싱그러움과 맑음 등을 상징하기에 적합합니다."
-                                            },
-                                            .
-                                            .
-                                            .
-                                            {
-                                                answerType: "웹디자인기능사 2011년 1회",
-                                                answerNum: "60",
-                                                answerAsk: "시각 디자인 영역의 한 영역이며 글자체, 글자크기, 행간, 여백, 간격, 단락, 그리드 등을 통해 전달되는 것은 무엇에 대한 활용인가?",
-                                                answerChoice: {
-                                                    1: "내비게이션 디자인(Navigation Design)",
-                                                    2: "웹 타이포그래피 디자인(Web Typographic Design)",
-                                                    3: "웹 컬러 디자인(Web Color Design)",
-                                                    4: "웹 인터페이스 디자인(Web Interface Design)",
-                                                },
-                                                answerResult: "2",
-                                                answerEx: "다른 글자와 구별되는 그 글자의 형태를 '폰트'(서체) 라고 하며, 글자와 글자가 위치한 공간, 레이아웃된 모양 등 글자로 디자인된 상태를 모두 폭 넓게 타이포그라피라고 정의합니다."
-                                            }
-                                        ];
-                                
-                                        const quizWrap = document.querySelector(".quiz__wrap");
-                                        let quizScore = "";
-                                
-                                        //문제 출력
-                                        const updateQuiz = () =&gt; {
-                                            const exam = [];
-                                
-                                
-                                            quizInfo.forEach((question, number) =&gt; {
-                                                exam.push(`&lt;div class="quiz"&gt;
-                                                &lt;span class="quiz__type"&gt;${question.answerType}&lt;/span&gt;
-                                                &lt;h2 class="quiz__question"&gt;
-                                                    &lt;span class="number"&gt;${question.answerNum}. &lt;/span&gt;
-                                                    &lt;div class="ask"&gt;${question.answerAsk}&lt;/div&gt;
-                                                &lt;/h2&gt;
-                                                &lt;div class="quiz__view"&gt;
-                                                    &lt;div class="true"&gt;정답입니다!&lt;/div&gt;
-                                                    &lt;div class="false"&gt;틀렸습니다!&lt;/div&gt;
-                                                    &lt;div class="dog"&gt;
-                                                        &lt;div class="head"&gt;
-                                                            &lt;div class="ears"&gt;&lt;/div&gt;
-                                                            &lt;div class="face"&gt;&lt;/div&gt;
-                                                            &lt;div class="eyes"&gt;
-                                                                &lt;div class="teardrop"&gt;&lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class="nose"&gt;&lt;/div&gt;
-                                                            &lt;div class="mouth"&gt;
-                                                                &lt;div class="tongue"&gt;&lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class="chin"&gt;&lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class="body"&gt;
-                                                            &lt;div class="tail"&gt;&lt;/div&gt;
-                                                            &lt;div class="legs"&gt;&lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class="quiz__answer"&gt;
-                                                    &lt;div class="quiz__selects"&gt;
-                                                        &lt;label for="select1${number}"&gt;
-                                                            &lt;input type="radio" id="select1${number}" class="select" name="select${number}" value="1"&gt;
-                                                            &lt;span class="choice"&gt;${question.answerChoice[1]}&lt;/span&gt;
-                                                        &lt;/label&gt;
-                                                        &lt;label for="select2${number}"&gt;
-                                                            &lt;input type="radio" id="select2${number}" class="select" name="select${number}" value="2"&gt;
-                                                            &lt;span class="choice"&gt;${question.answerChoice[2]}&lt;/span&gt;
-                                                        &lt;/label&gt;
-                                                        &lt;label for="select3${number}"&gt;
-                                                            &lt;input type="radio" id="select3${number}" class="select" name="select${number}" value="3"&gt;
-                                                            &lt;span class="choice"&gt;${question.answerChoice[3]}&lt;/span&gt;
-                                                        &lt;/label&gt;
-                                                        &lt;label for="select4${number}"&gt;
-                                                            &lt;input type="radio" id="select4${number}" class="select" name="select${number}" value="4"&gt;
-                                                            &lt;span class="choice"&gt;${question.answerChoice[4]}&lt;/span&gt;
-                                                        &lt;/label&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                            `);          //push를 이용해서 내용을 넣는다. 
-                                
-                                            });
-                                
-                                            exam.push(`
-                                                &lt;div class="quiz__confirm"&gt;
-                                                    &lt;button class="check"&gt;정답 확인하기&lt;/button&gt;
-                                                    &lt;div class="ex"&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            `)
-                                
-                                            quizWrap.innerHTML = exam.join('');     //join으로 중간에 생기는 따옴표 지운다.
-                                        }
-                                        updateQuiz();
-                                
-                                        //정답 확인
-                                        const answerQuiz = () =&gt; {      //정답 확인 버튼 클릭시의 이벤트
-                                            const quizSelects = document.querySelectorAll(".quiz__selects");        //객관식 보기
-                                            // const quizEx = document.querySelector(".quiz__confirm .ex");     //체크한 보기 == 문제 정답 확인
-                                
-                                            //사용자 체크한 보기 == 문제 정답
-                                            quizInfo.forEach((question, number) =&gt; {
-                                                const userSelector = `input[name=select${number}]:checked`; //사용자가 체크한 것   (이해가 잘)
-                                                const quizSelectsWrap = quizSelects[number];                //0은 첫번째 문제, 1은 두번째 문제... quizSelectsWrap으로 정해준 것
-                                                const userAnswer = (quizSelectsWrap.querySelector(userSelector) || {}).value;           //quiz__selects[number] 체크 된 것을 찾는다. | {} 빈 문자열은 체크 하지 않을 경우의 출력
-                                                const quizView = document.querySelectorAll(".quiz__view")       //강아지
-                                
-                                                console.log(userAnswer)
-                                
-                                                if (userAnswer == question.answerResult) {
-                                                    // console.log("정답");
-                                                    quizView[number].classList.add("like");
-                                                    quizScore++;
-                                                } else {
-                                                    // console.log("오답");
-                                                    quizView[number].classList.add("dislike");
-                                                    const divBox = document.createElement("div");
-                                                    quizSelectsWrap.appendChild(divBox).innerHTML = `&lt;p class="result"&gt;${question.answerEx}&lt;/p&gt;`
-                                                }
-                                            });
-                                
-                                            //전체 문제수 
-                                            // console.log(quizInfo.length)
-                                
-                                            //내가 맞힌 수
-                                            // console.log(quizScore)      //콘솔로그 응용
-                                
-                                            //정답 수 / 합격여부 출력
-                                
-                                            // quizEx.innerText = `전체 갯수 : ${quizInfo.length} 맞은 갯수 : ${quizScore}`;
-                                
-                                            if (36 &lt;= quizScore) {
-                                                document.querySelector(".ex").textContent = "전체" + quizInfo.length + "개 중 " + quizScore + "개 정답으로, 합격."
-                                            } else {
-                                                document.querySelector(".ex").textContent = "전체" + quizInfo.length + "개 중 " + quizScore + "개 정답으로, 불합격."
-                                            }
-                                
-                                        }
-                                
-                                        //정답 클릭
-                                        document.querySelector(".quiz__confirm .check").addEventListener("click", answerQuiz)
+const quizInfo = [
+    {
+        answerType: "웹디자인기능사 2011년 1회",
+        answerNum: "1",
+        answerAsk: "건강 이미지의 웹사이트를 구성하려고 한다. 가장 적합한 컬러는?",
+        answerChoice: {
+            1: "빨강색",
+            2: "노랑색",
+            3: "검정색",
+            4: "녹색",
+        },
+        answerResult: "4",
+        answerEx: "초록은 싱그러움과 맑음 등을 상징하기에 적합합니다."
+    },
+    .
+    .
+    .
+    {
+        answerType: "웹디자인기능사 2011년 1회",
+        answerNum: "60",
+        answerAsk: "시각 디자인 영역의 한 영역이며 글자체, 글자크기, 행간, 여백, 간격, 단락, 그리드 등을 통해 전달되는 것은 무엇에 대한 활용인가?",
+        answerChoice: {
+            1: "내비게이션 디자인(Navigation Design)",
+            2: "웹 타이포그래피 디자인(Web Typographic Design)",
+            3: "웹 컬러 디자인(Web Color Design)",
+            4: "웹 인터페이스 디자인(Web Interface Design)",
+        },
+        answerResult: "2",
+        answerEx: "다른 글자와 구별되는 그 글자의 형태를 '폰트'(서체) 라고 하며, 글자와 글자가 위치한 공간, 레이아웃된 모양 등 글자로 디자인된 상태를 모두 폭 넓게 타이포그라피라고 정의합니다."
+    }
+];
+
+const quizWrap = document.querySelector(".quiz__wrap");
+let quizScore = "";
+
+//문제 출력
+const updateQuiz = () =&gt; {
+    const exam = [];
+
+
+    quizInfo.forEach((question, number) =&gt; {
+        exam.push(`&lt;div class="quiz"&gt;
+        &lt;span class="quiz__type"&gt;${question.answerType}&lt;/span&gt;
+        &lt;h2 class="quiz__question"&gt;
+            &lt;span class="number"&gt;${question.answerNum}. &lt;/span&gt;
+            &lt;div class="ask"&gt;${question.answerAsk}&lt;/div&gt;
+        &lt;/h2&gt;
+        &lt;div class="quiz__view"&gt;
+            &lt;div class="true"&gt;정답입니다!&lt;/div&gt;
+            &lt;div class="false"&gt;틀렸습니다!&lt;/div&gt;
+            &lt;div class="dog"&gt;
+                &lt;div class="head"&gt;
+                    &lt;div class="ears"&gt;&lt;/div&gt;
+                    &lt;div class="face"&gt;&lt;/div&gt;
+                    &lt;div class="eyes"&gt;
+                        &lt;div class="teardrop"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="nose"&gt;&lt;/div&gt;
+                    &lt;div class="mouth"&gt;
+                        &lt;div class="tongue"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="chin"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="body"&gt;
+                    &lt;div class="tail"&gt;&lt;/div&gt;
+                    &lt;div class="legs"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="quiz__answer"&gt;
+            &lt;div class="quiz__selects"&gt;
+                &lt;label for="select1${number}"&gt;
+                    &lt;input type="radio" id="select1${number}" class="select" name="select${number}" value="1"&gt;
+                    &lt;span class="choice"&gt;${question.answerChoice[1]}&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;label for="select2${number}"&gt;
+                    &lt;input type="radio" id="select2${number}" class="select" name="select${number}" value="2"&gt;
+                    &lt;span class="choice"&gt;${question.answerChoice[2]}&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;label for="select3${number}"&gt;
+                    &lt;input type="radio" id="select3${number}" class="select" name="select${number}" value="3"&gt;
+                    &lt;span class="choice"&gt;${question.answerChoice[3]}&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;label for="select4${number}"&gt;
+                    &lt;input type="radio" id="select4${number}" class="select" name="select${number}" value="4"&gt;
+                    &lt;span class="choice"&gt;${question.answerChoice[4]}&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    `);          //push를 이용해서 내용을 넣는다. 
+
+    });
+
+    exam.push(`
+        &lt;div class="quiz__confirm"&gt;
+            &lt;button class="check"&gt;정답 확인하기&lt;/button&gt;
+            &lt;div class="ex"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    `)
+
+    quizWrap.innerHTML = exam.join('');     //join으로 중간에 생기는 따옴표 지운다.
+}
+updateQuiz();
+
+//정답 확인
+const answerQuiz = () =&gt; {      //정답 확인 버튼 클릭시의 이벤트
+    const quizSelects = document.querySelectorAll(".quiz__selects");        //객관식 보기
+    // const quizEx = document.querySelector(".quiz__confirm .ex");     //체크한 보기 == 문제 정답 확인
+
+    //사용자 체크한 보기 == 문제 정답
+    quizInfo.forEach((question, number) =&gt; {
+        const userSelector = `input[name=select${number}]:checked`; //사용자가 체크한 것   (이해가 잘)
+        const quizSelectsWrap = quizSelects[number];                //0은 첫번째 문제, 1은 두번째 문제... quizSelectsWrap으로 정해준 것
+        const userAnswer = (quizSelectsWrap.querySelector(userSelector) || {}).value;           //quiz__selects[number] 체크 된 것을 찾는다. | {} 빈 문자열은 체크 하지 않을 경우의 출력
+        const quizView = document.querySelectorAll(".quiz__view")       //강아지
+
+        console.log(userAnswer)
+
+        if (userAnswer == question.answerResult) {
+            // console.log("정답");
+            quizView[number].classList.add("like");
+            quizScore++;
+        } else {
+            // console.log("오답");
+            quizView[number].classList.add("dislike");
+            const divBox = document.createElement("div");
+            quizSelectsWrap.appendChild(divBox).innerHTML = `&lt;p class="result"&gt;${question.answerEx}&lt;/p&gt;`
+        }
+    });
+
+    //전체 문제수 
+    // console.log(quizInfo.length)
+
+    //내가 맞힌 수
+    // console.log(quizScore)      //콘솔로그 응용
+
+    //정답 수 / 합격여부 출력
+
+    // quizEx.innerText = `전체 갯수 : ${quizInfo.length} 맞은 갯수 : ${quizScore}`;
+
+    if (36 &lt;= quizScore) {
+        document.querySelector(".ex").textContent = "전체" + quizInfo.length + "개 중 " + quizScore + "개 정답으로, 합격."
+    } else {
+        document.querySelector(".ex").textContent = "전체" + quizInfo.length + "개 중 " + quizScore + "개 정답으로, 불합격."
+    }
+
+}
+
+//정답 클릭
+document.querySelector(".quiz__confirm .check").addEventListener("click", answerQuiz)
 </code></pre>
                                 </div>
                                 <div>
