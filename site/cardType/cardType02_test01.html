@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 유형02</title>
+    <style>
+        /* fonts */
+        @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+        .gmark {
+            font-family: GmarketSans;
+            font-weight: 500;
+        }
+
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        /* common */
+        .container {
+            width: 1160px;
+            padding: 0 20px;
+            margin: 0 auto;
+            min-width: 1160px;
+        }
+
+        .section {
+            padding: 120px 0;
+        }
+
+        .section>h2 {
+            font-size: 50px;
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section>p {
+            font-size: 22px;
+            font-weight: 300;
+            color: #666;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .gray {
+            background-color: #f5f5f5;
+        }
+
+        /* ir 효과(이미지 태체 효과 == alt) */
+        .ir {
+            display: block;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+            text-indent: -9999px;
+        }
+
+        /* cardType02 */
+        .card__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card__inner .card {
+            width: 24%;
+            position: relative;
+        }
+
+        .card__inner .card:first-child {
+            margin-bottom: 50px;
+        }
+
+        .card__inner .card img {
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .card__inner .card .tit {
+            font-size: 28px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-right: 20px;
+        }
+
+        .card__inner .card .desc {
+            font-size: 18px;
+            font-weight: 300;
+            color: #666;
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .card__inner .card .more {
+            width: 24px;
+            height: 24px;
+            background-image: url(img/arrow.svg);
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 230px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="cardType02" class="card__wrap gmark section gray">
+        <h2>포트폴리오 구경하기</h2>
+        <p>웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자 포트폴리오입니다.<br>
+            열심히 만들었으니 소중히 봐주세요!🦁
+        </p>
+        <div class="card__inner container">
+            <article class="card">
+                <img src="img/card_bg02_01.jpg" alt="영화">
+                <h3 class="tit">영화를 보는 것의 대표적인 방법은 극장</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>영화를 보는 것의 대표적인 방법은 극장
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_02.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_03.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_04.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_05.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_06.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_07.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+
+            <article class="card">
+                <img src="img/card_bg02_08.jpg" alt="영화">
+                <h3 class="tit">영화</h3>
+                <p class="desc">장면을 연속적으로 촬영하여<br>
+                    기록한 동영상을, 어떤 내용을<br>
+                    전달하게끔 만든 영상물.<br>
+                </p>
+                <a href="#" class="more"><span class="ir">더보기</span></a>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 만들기 : 카드유형01</title>
+    <link rel="stylesheet" href="../../javascript/assets/css/style.css">
+    <link rel="stylesheet" href="../../javascript/assets/css/dracula.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="../index.html">SITE</a></h1>
+        <nav class="header_nav">
+            <ul class="study">
+                <li class="active"><a href="sitecard01.html">사이트 만들기 : 카드유형01</a></li>
+                <li><a href="sitecard02.html">사이트 만들기 : 카드유형02</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <main id="main">
+        <div class="document">
+            <h2 class="t_tit">사이트 만들기 : 배너 유형01</h2>
+
+            <p class="t_desc2">
+                배너 유형을 만들어봅시다.
+            </p>
+
+            <hr>
+
+            <div class="t_iframe" style="min-height: 1000px; padding-top: 0;">
+                <iframe src="https://kimyihyung.github.io/coding/site/bannerType/bannerType01.html"
+                    frameborder="0"></iframe>
+            </div>
+
+            <div class="t_link">
+                <a href="https://github.com/kimyihyung/coding/blob/main/site/bannerType/bannerType01.html"
+                    target="blank">원본
+                    소스 보기</a>
+                <a href="https://kimyihyung.github.io/coding/site/bannerType/bannerType01.html" target="_blank">원본
+                    사이트</a>
+            </div>
+
+
+            <hr>
+
+            <h3 class="t_tit2">Figma</h3>
+            <p class="t_desc2">코드를 진행하기에 앞서, 피그마를 이용해서 웹사이트를 디자인합니다. </p>
+            <div class="t_iframe">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwUvtbZqHuvKFpB0uXVpCaw%2F%25EC%2582%25AC%25EC%259D%25B4%25ED%258A%25B8-%25EB%25A7%258C%25EB%2593%25A4%25EA%25B8%25B0-(Y)%3Fnode-id%3D1189%253A1944"
+                    allowfullscreen></iframe>
+            </div>
+
+            <hr>
+
+            <h3 class="t_tit2">CSS</h3>
+            <div class="t_code">
+                <pre><code>.banner__inner {
+    background-image: url(../site1/assets/img/banner_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0;
+    color: #fff;
+}
+
+.banner__inner .title {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.banner__inner .desc {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.banner__inner .desc a {
+    color: #fff;
+    display: block;
+}
+
+.banner__inner .desc a:hover {
+    text-decoration: underline;
+}
+
+.banner__inner .small {
+    font-size: 16px;
+    text-decoration: underline;
+}
+</code></pre>
+            </div>
+
+            <h3 class="t_tit2">HTML</h3>
+            <div class="t_code">
+                <pre><code>&lt;section id="bannerTyper" class="banner__wrap nexon section"&gt;
+    &lt;h2 class="blind"&gt;배터 영역&lt;/h2&gt;
+    &lt;div class="banner__inner"&gt;
+        &lt;h3 class="title"&gt;YHcode&lt;/h3&gt;
+        &lt;p class="desc"&gt;
+            다양한 코딩 정보를 공유합니다.
+            &lt;a href="https://yhcode.tistory.com" title="블로그 이동"&gt;https://yhcode.tistory.com&lt;/a&gt;
+        &lt;/p&gt;
+        &lt;span class="small"&gt;배너 유형01&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- //footer -->
+    <script src="../../javascript/assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

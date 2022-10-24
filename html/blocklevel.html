@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 레퍼런스 북</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dracula.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- //구글 아이콘 -->
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="#">라인중학교 1학년 코딩반</a></h1>
+        <span>이름 : 김이형</span>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <header class="main_header">
+            <h2>HTML <em>레퍼런스 북</em></h2>
+        </header>
+        <nav class="main_menu">
+            <ul>
+                <li><a href="alphabet.html">알파벳</a></li>
+                <li><a href="basic.html">기본 문서</a></li>
+                <li><a href="markup.html">기본 규칙</a></li>
+                <li class="active"><a href="blocklevel.html">블록구조/인라인 구조</a></li>
+                <li><a href="web.html">웹표준/웹접근성/웹호환성</a></li>
+                <li><a href="semantic.html">시멘틱 태그</a></li>
+                <li><a href="seo.html">검색엔진시스템(SEO)</a></li>
+                <li><a href="frame.html">구조 관련 요소</a></li>
+            </ul>
+            <ul>
+                <li><a href="layout.html">레이아웃</a></li>
+                <li><a href="layout01.html">레이아웃01</a></li>
+                <li><a href="layout02.html">레이아웃02</a></li>
+                <li><a href="layout03.html">레이아웃03</a></li>
+                <li><a href="layout04.html">레이아웃04</a></li>
+                <li><a href="layout05.html">레이아웃05</a></li>
+            </ul>
+        </nav>
+        <div class="main_refer">
+            <div class="document">
+                <h2 class="t_tit">블록 레벨 요소와 인라인요소</h2><br>
+                <h3 class="t_tit2">1. 블록 레벨 요소 (Block-level Element)</h3>
+                <p class="t_desc2">
+                    콘텐츠의 흐름이 끊기고, 요소를 구성하는 줄 하나를 다 차지합니다.<br>
+                    마크업 했던 &lt;h1&gt;,
+                    &lt;h2&gt;, &lt;p&gt; 요소들은 블록의 성질을 가지고 있어 화면상 줄 바꿈 현상이 일어나는 것을 볼 수 있습니다.
+                </p>
+                <div class="t_code">
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;블록 레벨 요소&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;블록 레벨 요소&lt;/h1&gt;
+    &lt;h2&gt;블록 레벨 요소 성질&lt;/h2&gt;
+    &lt;p&gt;줄 바꿈이 생깁니다.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+                <br>
+                <div class="t_iframe">
+                    <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="abYXMWM"
+                        data-user="kimyihyung"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/kimyihyung/pen/abYXMWM">
+                                블록</a> by kimyihyung (<a href="https://codepen.io/kimyihyung">@kimyihyung</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+
+
+
+                <h3 class="t_tit2"><br />2. 인라인 요소 (Inline Element)</h3>
+                <p class="t_desc2">
+                    콘텐츠의 흐름을 끊지 않고, 요소를 구성하는 태그를 할당된 공간만 차지합니다.<br>
+                    마크업 했던 &lt;strong&gt;,
+                    &lt;span&gt; 요소들은 인라인 성질을 가지고 있어 행이 바뀌지 않고 한 줄로 출력 된 것을 볼 수 있습니다.<br>
+                </p>
+                <div class="t_code">
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;인라인 요소&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;strong&gt;인라인 요소&lt;/strong&gt;
+    &lt;span&gt;인라인 요소는 한 줄로 출력됩니다.&lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+                <br>
+                <div class="t_iframe">
+                    <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="BarMbRp" data-user="kimyihyung" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/kimyihyung/pen/BarMbRp">
+                        인라인</a> by kimyihyung (<a href="https://codepen.io/kimyihyung">@kimyihyung</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </div>
+
+
+                <h3 class="t_tit2"><br />3. 블록 레벨 요소와 인라인 요소의 특징</h3>
+                <table class="t_table">
+                    <thead>
+                        <tr>
+                            <th>요소 유형</th>
+                            <th>특징</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ce">블록 레벨 요소</td>
+                            <td>1. 블록 레벨 요소는 줄 바꿈이 일어납니다.<br>
+                                2. 블록 레벨 요소는 텍스트(문자)와 인라인 요소를 자식 요소로 포함할 수 있습니다.<br>
+                                3. 블록 레벨 요소 중에는 블록 레벨 요소를 자식 요소로 포함 할 수 있는 요소와 포함할 수 없는 요소가 있습니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">인라인 요소</td>
+                            <td>1. 인라인 요소는 줄 바꿈이 일어나지 않습니다.<br>
+                                2. 인라인 요소는 텍스트(문자)와 인라인 요소를 자식 요소로 포함할 수 있습니다.<br>
+                                3. 인라인 요소는 블록 레벨 요소를 자식 요소로 포함할 수 없습니다.</td>
+                        </tr>
+                    </tbody>
+
+                </table><br>
+
+                <p class="t_desc">블록구조와 인라인구조의 태그 종류입니다.</p>
+
+                <table class="t_table">
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 70%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>구조</th>
+                            <th>태그 종류</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ce">블록</td>
+                            <td>&lt;address&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;blockquote&gt;, <br>
+                                &lt;canvas&gt;, &lt;dd&gt;, &lt;div&gt;, &lt;dl&gt;, &lt;fieldset&gt;,
+                                &lt;figcaption&gt;, <br>
+                                &lt;figure&gt;, &lt;footer&gt;, &lt;form&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;,
+                                &lt;h4&gt;, <br>
+                                &lt;h5&gt;, &lt;h6&gt;, &lt;header&gt;, &lt;hgroup&gt;, &lt;hr&gt;, &lt;noscript&gt;,
+                                &lt;ol&gt;, <br>
+                                &lt;output&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;section&gt;, &lt;table&gt;, &lt;ul&gt;,
+                                &lt;video&gt;</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">인라인</td>
+                            <td>&lt;a&gt;, &lt;abbr&gt;, &lt;acronym&gt;, &lt;b&gt;, &lt;bdo&gt;, &lt;big&gt;, <br>
+                                &lt;br/&gt;, &lt;button&gt;, &lt;cite&gt;, &lt;code&gt;, &lt;dfn&gt;, &lt;em&gt;,
+                                &lt;i&gt;, <br>
+                                &lt;img&gt;, &lt;input&gt;, &lt;kbd&gt;, &lt;label&gt;, &lt;map&gt;, &lt;object&gt;,
+                                &lt;q&gt;, <br>
+                                &lt;samp&gt;, &lt;small&gt;, &lt;script&gt;, &lt;select&gt;, &lt;span&gt;,
+                                &lt;strong&gt;, <br>
+                                &lt;sub&gt;, &lt;sup&gt;, &lt;textarea&gt;, &lt;tt&gt;, &lt;var&gt;</td>
+                    </tbody>
+                </table>
+
+                <br>
+
+                <p class="t_desc">HTML5로 넘어오면서 블록 레벨 요소와 인라인요소는 좀 더 복잡한 콘텐츠 카테고리 (콘텐츠 모델)로 대체 되었습니다. 콘텐츠의 종류와 태그는 다음과
+                    같습니다. </p>
+
+                <table class="t_table">
+                    <thead>
+                        <tr>
+                            <th>콘텐츠 종류</th>
+                            <th>내용</th>
+                            <th>해당 요소</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ce">메타데이터 콘텐츠<br>Metadate Content</td>
+                            <td>&lt;head&gt;태그 안에 포함되는 요소들로 콘텐츠의 표현, 동작 설정, 문서간 관
+                                계를 설정, 정보전달을 포함하는 요소를 의미</td>
+                            <td>&lt;base&gt;,&lt;link&gt;,&lt;meta&gt;,&lt;noscript&gt;,<br>
+                                &lt;script&gt;,&lt;style&gt;,&lt;title&gt;</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">플로우 콘텐츠<br>Flow Content</td>
+                            <td>&lt;body&gt;태그 안에 포함되는 대부분의 요소들로 내용 흐름에 관한 요소를 의미<br></td>
+                            <td>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;<br>
+                                &lt;address&gt;,&lt;p&gt;,&lt;a&gt;,&lt;img&gt;,&lt;ul&gt;,&lt;ol&gt;<br>
+                                &lt;dl&gt;,&lt;table&gt;,&lt;from&gt;,...</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">섹션 콘텐츠<br>Section Content</td>
+                            <td>heading과 footer의 범위를 정의하는 요소를 의미<br></td>
+                            <td>&lt;article&gt;,&lt;aside&gt;,&lt;nav&gt;,&lt;section&gt;</td>
+
+                        </tr>
+                        <tr>
+                            <td class="ce">해당 콘텐츠<br>Heading Content</td>
+                            <td>섹션의 헤더를 정의하는 요소를 의미<br></td>
+                            <td>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;<br></td>
+
+                        </tr>
+                        <tr>
+                            <td class="ce">프레이징 콘텐츠<br>Phrasing Content</td>
+                            <td>텍스트를 마크업하는 요소를 의미</td>
+                            <td>&lt;a&gt;,&lt;em&gt;,&lt;strong&gt;,&lt;sub&gt;,&lt;sup&gt;,<br>
+                                &lt;label&gt;,....</td>
+
+                        </tr>
+                        <tr>
+                            <td class="ce">임베디드 콘텐츠<br>Embadded Content</td>
+                            <td>HTML 문서에 다른 리소스르르 삽입하는 요소를 의미</td>
+                            <td>&lt;img&gt;,&lt;audio&gt;,&lt;video&gt;,&lt;iframe&gt;,...<br>
+                                &lt;label&gt;,....</td>
+
+                        </tr>
+                        <tr>
+                            <td class="ce">인터랙티브 콘텐츠<br>Interactive Content</td>
+                            <td>사용자의 상호작용 위한 요소를 의미</td>
+                            <td>&lt;a&gt;,&lt;button</button>&gt;,&lt;audio&gt;,&lt;video&gt;,<br>
+                                &lt;select&gt;,...</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+    <!-- //header -->
+
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- footer -->
+
+    <script src="assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
