@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/bg.css">
     <link rel="stylesheet" href="../assets/css/game.css">
     <link rel="stylesheet" href="../assets/css/music.css">
+    <link rel="stylesheet" href="../assets/css/memory.css">
     <link rel="stylesheet" href="../assets/css/searchGame.css">
 
     <link href="https://webfontworld.github.io/fontlab/LABDigital.css" rel="stylesheet">
@@ -491,7 +492,7 @@
             </div>
             <div class="icon4">
                 <img src="../assets/img/icon4.png" alt="뮤직">
-                <span>MUSIC</span>
+                <span>MEMORY</span>
             </div>
             <div class="icon5">
                 <img src="../assets/img/icon5.png" alt="뮤직">
@@ -565,15 +566,153 @@
             </div>
         </div>
     </div>
+
+    <div class="memory__wrap">
+        <div class="memory__inner">
+            <div class="memory__card">
+                <ul class="cards">
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-1.svg" alt="Wolf">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="Face">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-2.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-3.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-4.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-5.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-6.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-7.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-8.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-1.svg" alt="Wolf">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="Face">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-2.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-3.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-4.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-5.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-6.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-7.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="view back">
+                            <img src="../assets/img/img-8.svg" alt="">
+                        </div>
+                        <div class="view front">
+                            <img src="../assets/img/Face with tongue.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- //뮤직 플레이어 -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="../assets/js/gsap.min.js"></script>
     <script src="../assets/js/music.js"></script>
+    <script src="../assets/js/memory.js"></script>
     <script src="../assets/js/searchEffect08 copy.js"></script>
     <script>
-        $(".music__wrap").draggable();
+        $(".music__wrap, .memory__wrap").draggable();
         $(".icon1").draggable({
             drag: function () {
                 $(".cursor img").attr("src", "../assets/img/game_mouse01.png")
