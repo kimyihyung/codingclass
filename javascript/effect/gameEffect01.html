@@ -114,7 +114,7 @@
             </div>
         </div>
         <!-- 뮤직 -->
-        <!-- <div class="sourceCont">
+        <div class="sourceCont">
             <div class="sourceCont_header">
                 <p>SOURCE VIEW</p>
                 <img src="../assets/img/close.svg" alt="">
@@ -122,17 +122,8 @@
             <iframe class="sourceOpen"
                 src="https://github1s.com/kimyihyung/codingclass/blob/main/javascript/effect/gameEffect01.html">
             </iframe>
-        </div> -->
-
-        <div class="sourceCont">
-            <div class="sourceCont_header">
-                <span>SOURCE VIEW</span>
-                <img src="../assets/img/close.svg" alt="닫기" />
-            </div>
-            <iframe class="sourceOpen"
-                src="https://github1s.com/kimyihyung/codingclass/blob/main/javascript/effect/gameEffect01.html"
-                frameborder="0"></iframe>
         </div>
+
         <!-- 소스 -->
         <div class="search__wrap">
             <div class="search__header">
@@ -586,6 +577,10 @@
         <!-- //searchEffect -->
         <div class="memory__wrap">
             <div class="memory__inner">
+                <div class="memory__header">
+                    <h2>메모리 게임</h2>
+                    <img src="../assets/img/close.svg" alt="">
+                </div>
                 <div class="memory__card">
                     <ul class="cards">
                         <li>
@@ -736,6 +731,10 @@
     <script src="../assets/js/memory.js"></script>
     <script src="../assets/js/searchEffect08 copy.js"></script>
     <script>
+        document.cookie = "safeCookie1=foo; SameSite=Lax";
+        document.cookie = "safeCookie2=foo";
+        document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
         $(".music__wrap, .memory__wrap").draggable();
         $(".icon1").draggable({
             drag: function () {
@@ -869,6 +868,18 @@
         });
         sourceClose.addEventListener("click", () => {
             sourceOpen.style.display = "none";
+        });
+    </script>
+    <script>
+        const memoryIcon = document.querySelector(".icon4");
+        const memoryOpen = document.querySelector(".memory__wrap");
+        const memoryClose = document.querySelector(".memory__header img");
+
+        memoryIcon.addEventListener("click", () => {
+            memoryOpen.style.display = "block";
+        });
+        memoryClose.addEventListener("click", () => {
+            memoryOpen.style.display = "none";
         });
     </script>
     <script>
