@@ -22,7 +22,6 @@
   padding: 0 20px;
   align-items: center;
   color: #fff;
-  border-radius: 50%;
 }
 .search__header img {
   filter: invert(1);
@@ -76,7 +75,6 @@
   border: 2px solid var(--htmlColor);
   padding: 15px 40px;
   color: #fff;
-  cursor: pointer;
 }
 .search__box .start:hover {
   color: #000;
@@ -99,7 +97,6 @@
   border-radius: 50px;
   margin: 3px;
   transition: all 0.3s;
-  cursor: pointer;
 }
 .search__list span:hover {
   background-color: var(--htmlColor);
@@ -120,7 +117,6 @@
 }
 .search__list .line li:hover {
   background: #d3e2fa;
-  cursor: pointer;
 }
 .search__info {
   text-align: right;
@@ -154,7 +150,6 @@
 .search__info .keyword span:hover {
   background-color: var(--htmlColor);
   color: #fff;
-  cursor: pointer;
 }
 .search__desc {
   padding: 20px 40px 20px 80px;
@@ -245,7 +240,6 @@
   margin-bottom: 10px;
 }
 .search__audio span {
-  cursor: pointer;
 }
 .search__audio .play {
   display: none;
@@ -284,7 +278,6 @@
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 50px;
-  cursor: pointer;
 }
 .search__result .restart:hover {
   color: var(--htmlColor);

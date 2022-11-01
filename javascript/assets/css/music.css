@@ -16,6 +16,7 @@
 }
 
 .music__wrap {
+  display: none;
 }
 
 .music__inner {

@@ -123,7 +123,6 @@
                 src="https://github1s.com/kimyihyung/codingclass/blob/main/javascript/effect/gameEffect01.html">
             </iframe>
         </div>
-
         <!-- 소스 -->
         <div class="search__wrap">
             <div class="search__header">
@@ -886,12 +885,12 @@
         const gamebox = document.querySelectorAll(".game_box > div");
 
         function zindex() {
-            gamebox.forEach(e => {
+            gamebox.forEach((e) => {
                 e.style.zIndex = 10;
             });
         }
 
-        gamebox.forEach(e => {
+        gamebox.forEach((e) => {
             e.addEventListener("click", () => {
                 zindex();
                 e.style.zIndex = 50;
