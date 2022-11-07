@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dracula.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="document">
+            <h2 class="t_tit">프로그래머스 1단계 - x만큼 간격이 있는 n개의 숫자</h2>
+            <p class="t_desc2">
+                함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 다음 제한 조건을 보고, 조건을 만족하는 함수,
+                solution을 완성해주세요.
+            </p>
+            <hr>
+            <h3 class="t_tit2">제한 조건
+            </h3>
+            <p class="t_desc2">
+                • x는 -10000000 이상, 10000000 이하인 정수입니다.
+                • n은 1000 이하인 자연수입니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">입출력 예</h3>
+            <table class="t_table">
+                <thead>
+                    <tr>
+                        <th class="ce">x</th>
+                        <th class="ce">n</th>
+                        <th class="ce">answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ce">2</td>
+                        <td class="ce">5</td>
+                        <td class="ce">[2,4,6,8,10]</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">4</td>
+                        <td class="ce">3</td>
+                        <td class="ce">[4,8,12]</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">-4</td>
+                        <td class="ce">2</td>
+                        <td class="ce">[-4, -8]</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <h3 class="t_tit2">문제 풀이</h3>
+            <p class="t_desc">
+                for, push
+            </p>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(x, n) {
+    var answer = [];
+     for(let i=1; i&lt;=n; i++){
+        answer.push(x*i)
+    }
+    return answer;
+}
+</code></pre>
+            </div>
+            <hr>
+            <h3 class="t_tit2">다른 사람의 풀이</h3>
+            <p class="t_desc">
+                Array().fill()
+            </p>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(x, n) {
+    return Array(n).fill(x).map((v, i) => (i + 1) * v)
+}
+</code></pre>
+            </div>
+            <div class="t_link">
+                <a href="https://school.programmers.co.kr/learn/courses/30/lessons/12954">문제
+                    풀기</a>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../../assets/js/highlight.min.js"></script>
+    <script> hljs.highlightAll();</script>
+</body>
+
+</html>

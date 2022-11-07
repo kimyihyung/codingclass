@@ -1,5 +1,6 @@
 :root {
-  --htmlColor: #223547;
+  --htmlColor: #d6d8da;
+  /* --htmlColor: #223547; */
 }
 .search__wrap {
   display: none;
@@ -21,7 +22,7 @@
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
-  color: #fff;
+  color: #f5f5f5;
 }
 .search__header img {
   filter: invert(1);
@@ -32,15 +33,17 @@
   font-weight: normal;
 }
 .search__inner {
+  position: relative;
   width: 100%;
   height: 93%;
-  background: #f5f5f5;
+  background: rgb(45, 45, 45);
   overflow-y: scroll;
   box-sizing: border-box;
   text-align: center;
 }
 .search__inner h1 {
   margin-bottom: 10px;
+  color: #f5f5f5;
 }
 /* box */
 .search__box {
@@ -63,6 +66,7 @@
   border-radius: 50px;
   font-size: 20px;
   margin-top: 20px;
+  background: rgb(89, 88, 88);
 }
 .search__box .start {
   position: absolute;
@@ -74,11 +78,11 @@
   font-size: 20px;
   border: 2px solid var(--htmlColor);
   padding: 15px 40px;
-  color: #fff;
+  color: #f5f5f5;
 }
 .search__box .start:hover {
   color: #000;
-  background: #f1f3f6;
+  background: #f5f5f5;
 }
 .search__list li {
   text-align: left;
@@ -97,10 +101,12 @@
   border-radius: 50px;
   margin: 3px;
   transition: all 0.3s;
+  background-color: var(--htmlColor);
+  color: #000;
 }
 .search__list span:hover {
-  background-color: var(--htmlColor);
-  color: #fff;
+  background-color: #000;
+  color: var(--htmlColor);
 }
 .search__list .line em {
   float: right;
@@ -110,19 +116,22 @@
   margin: 50px 0;
 }
 .search__list .line li {
-  background: #e3eaf5;
+  background: #343638;
+  /* background: #d3e2fa; */
   padding: 10px 30px;
   margin-bottom: 5px;
   border-radius: 50px;
 }
 .search__list .line li:hover {
-  background: #d3e2fa;
+  /* background: #d3e2fa; */
+  background: #343638;
 }
 .search__info {
   text-align: right;
   margin-bottom: 30px;
   padding-bottom: 10px;
   border-bottom: 2px dashed var(--htmlColor);
+  color: #f5f5f5;
 }
 .search__info.center {
   text-align: center;
@@ -149,7 +158,7 @@
 }
 .search__info .keyword span:hover {
   background-color: var(--htmlColor);
-  color: #fff;
+  color: #000;
 }
 .search__desc {
   padding: 20px 40px 20px 80px;
@@ -157,7 +166,7 @@
   border-radius: 50px;
   display: inline-block;
   background-color: var(--htmlColor);
-  color: #fff;
+  color: #000;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='8' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 16.958L21.5 21.958' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 22px 17px;
@@ -177,7 +186,7 @@
 }
 .search_click li a:hover {
   background-color: var(--htmlColor);
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 600px) {
@@ -202,6 +211,7 @@
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 30px;
+  color: #f5f5f5;
 }
 .search__wrap .time {
   width: 140px;
@@ -213,16 +223,16 @@
   background: #000;
 }
 .search__wrap .time span {
-  color: #fff;
   font-size: 34px;
   font-weight: 100;
+  color: #f5f5f5;
 }
 
 .search__answers span {
   display: inline-block;
   background: var(--htmlColor);
   padding: 10px 20px;
-  color: #fff;
+  color: #000;
   border-radius: 30px;
   margin: 3px;
 }
@@ -247,18 +257,16 @@
 
 /* search__result */
 .search__result {
-  position: fixed;
-  right: 1vw;
-  top: 1vw;
-  width: 40vw;
-  height: 40vw;
+  position: absolute;
+  right: 29vw;
+  top: 11vw;
+  width: 20vw;
+  height: 20vw;
   z-index: 10000;
-  transform: scale3d(0, 0, 0);
   align-items: center;
   justify-content: center;
   display: none;
-  border-radius: 50%;
-  background: #fff;
+  background: #f5f5f5;
   border: 6px solid var(--htmlColor);
 }
 .search__result.show {
@@ -273,7 +281,7 @@
 }
 .search__result .restart {
   background: var(--htmlColor);
-  color: #fff;
+  color: #000;
   border: 0;
   font-size: 20px;
   padding: 10px 20px;
@@ -281,7 +289,7 @@
 }
 .search__result .restart:hover {
   color: var(--htmlColor);
-  background: #fff;
+  background: #000;
   border: 1px solid var(--htmlColor);
 }
 

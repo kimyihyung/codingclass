@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../assets/css/font.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'LINESeedKR';
+            font-weight: lighter;
+            background: #000;
+            color: #fff;
+        }
+
+        .fixed {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .fixed_bottom {
+            position: fixed;
+            height: 100vh;
+            bottom: 0;
+        }
+
+        .fixed_left {
+            position: fixed;
+            left: 20%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .scrollTop {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            background: rgba(239, 239, 239, 0.3);
+            text-align: center;
+            line-height: 40px;
+            z-index: 100000;
+            font-weight: 800;
+            border-radius: 50%;
+        }
+
+        /* .fade-top {
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+
+        .fade-left {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        .fade-right {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+        } */
+
+        /* #section03 {
+            width: 100%;
+            height: 100%;
+            padding: 80px 0;
+            overflow: hidden;
+            border-left: 1px solid #fff;
+        } */
+
+        /*--- section03 ---*/
+        .sec03 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sec03 .list {
+            height: 13vw;
+            display: flex;
+            -ms-align-items: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .sec03 .list:first-child {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .sec03 .list p {
+            display: inline-block;
+            font-family: 'LINESeedKR';
+            font-size: 6vw;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 1px #ffffff;
+            white-space: nowrap;
+            position: relative;
+            line-height: 1;
+        }
+
+        .sec03 .list.list01 p:after {
+            content: "꾸준한 도전으로";
+        }
+
+        .sec03 .list.list02 p:after {
+            content: "실패를 극복하겠습니다.";
+        }
+
+        .sec03 .list.list03 p:after {
+            content: "문제를 해결하는 것을";
+        }
+
+        .sec03 .list.list04 p:after {
+            content: "성취를 위한 자세로";
+        }
+
+        .sec03 .list.list05 p:after {
+            content: "계속해서 시도하며 해결하겠습니다.";
+        }
+
+        .sec03 .list.list06 p:after {
+            content: "어려움을 극복하는";
+        }
+
+        .sec03 .list.list07 p:after {
+            content: "개발자가 되겠습니다.";
+        }
+
+        .sec03 .list p:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+
+            line-height: 1.03;
+            display: block;
+            color: #fff;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: 1s ease-out width;
+        }
+
+        .sec03 .list p:hover:after {
+            width: 100%;
+        }
+
+        .sec03 .list.list03 p,
+        .sec03 .list.list04 p,
+        .sec03 .list.list05 p,
+        .sec03 .list.list06 p,
+        .sec03 .list.list07 p {
+            font-family: 'LINESeedKR';
+            font-weight: bold;
+        }
+
+
+        /* layout */
+        #contents {
+            height: 100000px;
+        }
+
+        #section1 {}
+
+        #section2 {}
+
+        #section3 {}
+
+        #section4 {}
+
+        #section5 {}
+
+        #section6 {}
+
+        /* sec1 */
+        .sec1_text1,
+        .sec1_text2 {
+            font-size: 8vw;
+            white-space: nowrap;
+        }
+
+        .sec1_text3 {
+            width: 100%;
+            height: 100vh;
+            background: url(https://images.unsplash.com/photo-1664540244326-31130ab4d155?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1856&q=80);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sec1_text4 {
+            width: 50vw;
+            height: 50vw;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            line-height: 50vw;
+            font-size: 8vw;
+        }
+
+        .sec2_text1 {
+            background-image: url(https://images.unsplash.com/photo-1666053582202-25115d97c97b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            /* 이미지 하단 부터 나옴 */
+            background-size: cover;
+        }
+
+        .sec2_text2 {
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-image: url(https://images.unsplash.com/photo-1634833650314-ed773bcc5b23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80);
+            background-size: cover;
+        }
+
+        .sec2_text2 {
+            color: #fff;
+            text-align: center;
+            line-height: 50vw;
+            font-size: 8vw;
+        }
+
+        .sec2_text3 {
+            width: 100%;
+            height: 100vh;
+            background: url(https://images.unsplash.com/photo-1666053582202-25115d97c97b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scrollTop">0</div>
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="sec1_text1 fixed" data-0="top: 50%; opacity: 1;" data-500="top: 30%; opacity: 0;">WELLCOME
+                </div>
+                <div class="sec1_text2 fixed" data-500="opacity: 0; top: 70%; transform: translate(-50%, -50%) scale(1)"
+                    data-1000="opacity: 1; top: 50%; transform: translate(-50%, -50%) scale(1)"
+                    data-1500="opacity: 1; top: 50%; transform: translate(-50%, -50%) scale(0)">김이형입니다.
+                </div>
+                <div class="sec1_text3 fixed" data-1300="width: 0%; transform: translate(-50%, -50%) rotate(180deg);"
+                    data-2300="width: 100%; transform: translate(-50%, -50%) rotate(0deg);"></div>
+                <div class="sec1_text4 fixed" data-2000="transform: translate(-50%, -50%) scale(0) rotate(-360deg);"
+                    data-3000="transform: translate(-50%, -50%) scale(1) rotate(0deg);">
+                    HELLO!</div>
+            </div>
+        </section><!-- //section1 -->
+        <section id="section2">
+            <div class="sec2">
+                <div class="sec2_text1 fixed_bottom" data-3000="width: 100%; height:0vh;"
+                    data-4000="width: 100%; height:100vh;" data-5000="opacity: 1;">
+                </div>
+                <div class="sec2_text2 fixed"
+                    data-4000="opacity: 0; top: 70%; transform: translate(-50%, -50%) scale(1)"
+                    data-4500="opacity: 1; top: 50%; transform: translate(-50%, -50%) scale(1)"
+                    data-5000="opacity: 1; top: 50%; transform: translate(-50%, -50%) scale(0)">
+                </div>
+                <!--  <div class="sec2_text3 fixed"
+                    data-5000="opacity: 0; bottom: 1; transform: translate(-50%, -50%) scale(1)"
+                    data-5500="opacity: 1; bottom: 1; transform: translate(-50%, 0%) scale(5)"
+                    data-6000="opacity: 1; bottom: 1; transform: translate(-50%, 90%) scale(100)">
+                </div> -->
+            </div>
+        </section><!-- //section2 -->
+        <section id="section3">
+            <div class="sec03 fixed" data-5000="opacity: 0; top: 100%;" data-7000="opacity: 1; top: 30%;"
+                data-10000="opacity: 1; top: -20;">
+                <ul class=" sec03-list">
+                    <li class="list list01">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">꾸준한 도전으로</p>
+                        </div>
+                    </li>
+                    <li class="list list02">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">실패를 극복하겠습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list list03">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">문제를 해결하는 것을
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list list04">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">성취를 위한 자세로
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list list05">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">계속해서 시도하며
+                                해결하겠습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list list06">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">어려움을 극복하는
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list list07">
+                        <div class="li-inner" style="transform: translateX(50px);">
+                            <p class="fade-left" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">개발자가 되겠습니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        const s = skrollr.init();
+
+        //재귀 함수
+        function scroll() {
+            let scrollTop = window.pageYoffest || document.documentElement.scrollTop || window.screenY;
+
+            document.querySelector(".scrollTop").innerText = Math.ceil(scrollTop);
+
+
+            requestAnimationFrame(scroll);
+        }
+        scroll(); //함수 호출
+    </script>
+</body>
+
+</html>
