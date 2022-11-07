@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dracula.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="document">
+            <h2 class="t_tit">프로그래머스 1단계 - 핸드폰 번호 가리기</h2>
+            <p class="t_desc2">
+                프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
+                전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.
+            </p>
+            <hr>
+            <h3 class="t_tit2">제한 조건
+            </h3>
+            <p class="t_desc2">
+                • phone_number는 길이 4 이상, 20이하인 문자열입니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">입출력 예</h3>
+            <table class="t_table">
+                <thead>
+                    <tr>
+                        <th class="ce">phone_number</th>
+                        <th class="ce">return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ce">"01033334444"</td>
+                        <td class="ce">"*******4444"</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">"027778888"</td>
+                        <td class="ce">"*****8888"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <h3 class="t_tit2">문제 풀이</h3>
+            <p class="t_desc">
+                phone_number 뒤의 4개 제외하고 *, 뒤의 4자리를 붙여서 출력
+            </p>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(phone_number) {
+    return "*".repeat(phone_number.length-4) + phone_number.substring(phone_number.length-4);
+}
+</code></pre>
+            </div>
+            <hr>
+            <h3 class="t_tit2">다른 사람의 풀이</h3>
+            <p class="t_desc">
+                정규식
+            </p>
+            <div class="t_code">
+                <pre><code class="language-js">function hide_numbers(s) {
+  return s.replace(/\d(?=\d{4})/g, "*");
+}
+</code></pre>
+            </div>
+            <div class="t_link">
+                <a href="https://school.programmers.co.kr/learn/courses/30/lessons/12954">문제
+                    풀기</a>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../../assets/js/highlight.min.js"></script>
+    <script> hljs.highlightAll();</script>
+</body>
+
+</html>
