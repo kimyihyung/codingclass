@@ -40,7 +40,7 @@
             </div>
             <div class="icon3">
                 <img src="../assets/img/icon3.png" alt="뮤직">
-                <span>TETRIS</span>
+                <span>MUSIC</span>
             </div>
             <div class="icon4">
                 <img src="../assets/img/icon4.png" alt="뮤직">
@@ -50,7 +50,7 @@
                 <img src="../assets/img/icon5.png" alt="뮤직">
                 <span>SEARCH</span>
             </div>
-            <a href="https://github1s.com/kimyihyung/codingclass/blob/main/javascript/effect/gameEffect01.html">
+            <a href="https://github.com/kimyihyung/codingclass/blob/main/javascript/effect/gameEffect01.html">
                 <div class="icon6">
                     <img src="../assets/img/icon6.png" alt="뮤직">
                     <span>SOURCE</span>
@@ -735,32 +735,25 @@
 
         <!-- tetris__wrap -->
         <div class="tetris__wrap">
-            <div class="tetris__main">
-                <h2>Tetris Game</h2>
-                <p class="tetris-start">START</p>
-            </div>
             <div class="tetris__inner">
-                <div class="tetris__info">
-                    <h2 class="tetris__score">테트리스 게임</h2>
-                    <!-- <p class="tetris__score">Score : <span>0</span></p> -->
-                    <p class="tetris__line">Line : <span>0</span></p>
-                    <!-- <p class="tetris-close">Close</p> -->
-                    <img class="tetris-close" src="../assets/img/close.svg" alt="">
+                <div class="tetris__header">
+                    <h2>테트리스</h2>
+                    <p class="tetris__score">Score : <span>0</span></p>
+                    <img src="../assets/img/close.svg" alt="">
                 </div>
+                <div class="tetris__start"></div>
+                <div class="tetris__restart"></div>
                 <div class="tetris__play">
                     <div class="playground">
                         <ul></ul>
                     </div>
                 </div>
-            </div>
-            <div class="tetris__restart">
-                <div class="desc">GAME OVER</div>
-                <div class="tetris__total">
-                    <div class="time"><span>0</span> 초</div>
-                    <div class="line"><span>0</span> 줄</div>
+                <div class="tetris__close__btn">x</div>
+                <div class="tetris__info show">
+                    <ul class="tetris__info__desc">
+                    </ul>
+                    <div class="tetris__start__btn">START</div>
                 </div>
-                <div class="tetris__score"><span>0</span> 점</div>
-                <div class="restart__btn">RESTART</div>
             </div>
         </div>
         <!-- //tetris__wrap -->
@@ -784,7 +777,7 @@
         document.cookie = "safeCookie2=foo";
         document.cookie = "crossCookie=bar; SameSite=None; Secure";
 
-        $(".music__wrap, .memory__wrap, .tetris__wrap").draggable();
+        $(".music__wrap, .memory__wrap").draggable();
         $(".icon1").draggable({
             drag: function () {
                 $(".cursor img").attr("src", "../assets/img/game_mouse01.png")
@@ -932,20 +925,6 @@
         });
     </script>
     <script>
-        document.querySelector(".icon3").addEventListener("click", () => {
-            document.querySelector(".tetris__wrap").style.display = "block";
-        });
-        document.querySelector(".tetris-close").addEventListener("click", () => {
-            document.querySelector(".tetris__wrap").style.display = "none";
-            document.querySelector(".tetris__main").style.display = "block";
-            document.querySelector(".tetris__inner").style.display = "none";
-            document.querySelector(".tetris__info").style.display = "none";
-
-            document.querySelector(".tetris__line span").innerHTML = 0;
-            document.querySelector(".tetris__score span").innerHTML = 0;
-        });
-    </script>
-    <script>
         const gamebox = document.querySelectorAll(".game_box > div");
 
         function zindex() {
@@ -962,7 +941,7 @@
         });
     </script>
     <script>
-        // 최상단에 위치
+        // 클릭시 창 최상단에 위치
         // music__wrap
         // sourceCont
         // search__wrap

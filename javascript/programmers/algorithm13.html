@@ -59,18 +59,18 @@
             </p>
             <hr>
             <h3 class="t_tit2">문제 풀이</h3>
-            <p class="t_desc">
-            </p>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(s){
+     return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
+}
 </code></pre>
             </div>
             <hr>
             <h3 class="t_tit2">다른 사람의 풀이</h3>
-            <p class="t_desc">
-            </p>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function numPY(s) {
+  return s.match(/p/ig).length == s.match(/y/ig).length;
+}
 </code></pre>
             </div>
             <div class="t_link">

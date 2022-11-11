@@ -136,7 +136,6 @@
 
         sliderInner.style.transition = "all 0.6s";
         setInterval(() => {
-
             currentIndex = (currentIndex + 1) % sliderCount;    //1 2 3 4 0 1 2 3 4 0 1 2 3 4
             sliderInner.style.transform = "translateX(" + -1160 * currentIndex + "px)";
         }, 2000);

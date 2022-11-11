@@ -1,0 +1,223 @@
+.tetris__wrap {
+  width: 380px;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 10px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.tetris__main {
+  width: 360px;
+  height: 480px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  padding: 100px 50px;
+  text-align: center;
+}
+.tetris__main h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+/* .tetris__main p {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  line-height: 30px;
+  height: 30px;
+  margin-left: 65px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.tetris__main p:hover {
+  transform: scale(1.2);
+} */
+.tetris-start {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border-radius: 20px;
+  padding: 12px 30px 14px;
+  border: 3px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+}
+.tetris-start:hover {
+  text-shadow: 0 0 5px #fff;
+}
+.tetris__main ol {
+  margin-top: 50px;
+  color: white;
+  text-align: left;
+}
+.tetris__main ol li {
+  margin-bottom: 10px;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+.tetris__inner {
+  width: 360px;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+/* .tetris__info {
+  margin-top: 12px;
+  position: relative;
+  display: none;
+}
+.tetris__line {
+  position: absolute;
+  left: 20px;
+}
+.tetris__score {
+  position: absolute;
+  left: 145px;
+}
+.tetris-close {
+  position: absolute;
+  right: 20px;
+} */
+.tetris__start {
+}
+.tetris__restart {
+}
+.tetris__play {
+}
+.playground {
+}
+.playground > ul {
+}
+.playground > ul > li {
+  list-style: none;
+  width: 100%;
+  height: 30px;
+}
+.playground > ul > li > ul {
+  display: flex;
+}
+.playground > ul > li > ul > li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+.Tmino {
+  border: 8px #a042a2 outset !important;
+  background-color: #952d98;
+  box-sizing: border-box;
+}
+.Jmino {
+  border: 8px #1a74c4 outset !important;
+  background-color: #0065bd;
+}
+.Lmino {
+  border: 8px #ff861a outset !important;
+  background-color: #ff7900;
+}
+.Zmino {
+  border: 8px #ef3e4d outset !important;
+  background-color: #ed2939;
+}
+.Smino {
+  border: 8px #78c53e outset !important;
+  background-color: #69be28;
+}
+.Omino {
+  border: 8px #fed01a outset !important;
+  background-color: #fecb00;
+}
+.Imino {
+  border: 8px #1aa9de outset !important;
+  background-color: #009fda;
+}
+
+.tetris__restart {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  background: #0009;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.tetris__restart.show {
+  display: block;
+}
+.tetris__restart .desc {
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-shadow: 0 0 0.5rem rgb(138, 36, 255);
+}
+.tetris__total {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.tetris__total .time {
+  margin-right: 10px;
+}
+.tetris__total .line {
+}
+.tetris__restart .tetris__score {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.tetris__restart .restart__btn {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  padding: 1px 30px 2px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+.tetris__restart .restart__btn:hover {
+  background: rgba(81, 0, 173, 0.747);
+  text-shadow: 0 0 0.2rem rgb(255, 255, 255);
+}
+
+/* info */
+.tetris__info {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 40px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.tetris__info .tetris-close {
+  display: inline-block;
+  filter: invert(1);
+  width: 22px;
+}
+.tetris__info .tetris__score {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+}
