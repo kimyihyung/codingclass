@@ -180,6 +180,7 @@
 
 /* info */
 .tetris__info {
+  display: none;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
