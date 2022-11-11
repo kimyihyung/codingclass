@@ -743,7 +743,7 @@
                 <div class="tetris__info">
                     <h2 class="tetris__score">테트리스 게임</h2>
                     <!-- <p class="tetris__score">Score : <span>0</span></p> -->
-                    <p class="tetris__line">Line : <span>0</span></p>
+                    <p class="tetris__line">Score : <span>0</span></p>
                     <!-- <p class="tetris-close">Close</p> -->
                     <img class="tetris-close" src="../assets/img/close.svg" alt="">
                 </div>
@@ -938,8 +938,8 @@
         document.querySelector(".tetris-close").addEventListener("click", () => {
             document.querySelector(".tetris__wrap").style.display = "none";
             document.querySelector(".tetris__main").style.display = "block";
-            document.querySelector(".tetris__inner").style.display = "none";
-            document.querySelector(".tetris__info").style.display = "none";
+            // document.querySelector(".tetris__inner").style.display = "none";
+            // document.querySelector(".tetris__info").style.display = "none";
 
             document.querySelector(".tetris__line span").innerHTML = 0;
             document.querySelector(".tetris__score span").innerHTML = 0;

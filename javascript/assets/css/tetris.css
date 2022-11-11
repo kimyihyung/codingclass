@@ -23,18 +23,18 @@
   color: white;
   margin-bottom: 20px;
 }
-/* .tetris__main p {
-  background-color: white;
-  border-radius: 10px;
-  width: 50%;
-  line-height: 30px;
-  height: 30px;
-  margin-left: 65px;
-  transform: scale(1);
-  transition: all 0.3s;
-}
-.tetris__main p:hover {
-  transform: scale(1.2);
+/* .tetris__main p {                                                                                                                                                                                                                                                                                                                                                                                                        
+  background-color: white;                                                                                                                                                                                                                                                                                                                                                                                                        
+  border-radius: 10px;                                                                                                                                                                                                                                                                                                                                                                                                        
+  width: 50%;                                                                                                                                                                                                                                                                                                                                                                                                        
+  line-height: 30px;                                                                                                                                                                                                                                                                                                                                                                                                        
+  height: 30px;                                                                                                                                                                                                                                                                                                                                                                                                        
+  margin-left: 65px;                                                                                                                                                                                                                                                                                                                                                                                                        
+  transform: scale(1);                                                                                                                                                                                                                                                                                                                                                                                                        
+  transition: all 0.3s;                                                                                                                                                                                                                                                                                                                                                                                                        
+}                                                                                                                                                                                                                                                                                                                                                                                                        
+.tetris__main p:hover {                                                                                                                                                                                                                                                                                                                                                                                                        
+  transform: scale(1.2);                                                                                                                                                                                                                                                                                                                                                                                                        
 } */
 .tetris-start {
   display: inline-block;
@@ -69,23 +69,7 @@
   background: rgba(0, 0, 0, 0.6);
   display: none;
 }
-/* .tetris__info {
-  margin-top: 12px;
-  position: relative;
-  display: none;
-}
-.tetris__line {
-  position: absolute;
-  left: 20px;
-}
-.tetris__score {
-  position: absolute;
-  left: 145px;
-}
-.tetris-close {
-  position: absolute;
-  right: 20px;
-} */
+
 .tetris__start {
 }
 .tetris__restart {
@@ -196,28 +180,36 @@
 
 /* info */
 .tetris__info {
-  display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 40px;
+  height: 30px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  display: flex;
-  justify-content: space-between;
   padding: 0 20px;
   align-items: center;
   color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
 }
-.tetris__info .tetris-close {
-  display: inline-block;
+.tetris__info img {
+  top: 3px;
+  right: 20px;
+  position: absolute;
   filter: invert(1);
   width: 22px;
 }
-.tetris__info .tetris__score {
-  display: inline-block;
+.tetris__info h2 {
+  top: 7px;
+  position: absolute;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tetris__line {
+  top: 7px;
+  transform: translateX(250%);
+  position: absolute;
   font-size: 14px;
   font-weight: normal;
 }
