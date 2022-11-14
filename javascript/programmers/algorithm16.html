@@ -71,13 +71,19 @@
             <hr>
             <h3 class="t_tit2">문제 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(arr, divisor) {
+    const result = arr.filter( val => val % divisor === 0);
+    return result == 0 ? [-1] : result.sort( (a, b) => a - b );
+}
 </code></pre>
             </div>
             <hr>
             <h3 class="t_tit2">다른 사람의 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(arr, divisor) {
+    var answer = arr.filter(v => v%divisor == 0);
+    return answer.length == 0 ? [-1] : answer.sort((a,b) => a-b);
+}
 </code></pre>
             </div>
             <div class="t_link">

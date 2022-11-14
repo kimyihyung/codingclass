@@ -74,26 +74,25 @@ ul.lv2 li:hover a {
 }
 
 .slideContainer {
-  width: 1200px;
+  position: relative;
   height: 300px;
   overflow: hidden;
 }
 .slideWrap {
-  display: flex;
+  position: absolute;
 }
 .slide {
   position: relative;
 }
 .slide p {
   position: absolute;
-  left: 0;
-  top: 0;
-  background: rgb(255, 245, 245);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: #000;
+  border-radius: 50px;
   padding: 10px 20px;
-}
-.slide img {
-  width: 1200px;
-  height: 300px;
 }
 
 .content {

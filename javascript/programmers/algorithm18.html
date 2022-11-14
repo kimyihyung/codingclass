@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dracula.css">
+</head>
+
+<body>
+    <main id="main">
+        <div class="document">
+            <h2 class="t_tit">프로그래머스 1단계 - 없는 숫자 더하기</h2>
+            <p class="t_desc2">
+                0부터 9까지의 숫자 중 일부가 들어있는 정수 배열 numbers가 매개변수로 주어집니다. numbers에서 찾을 수 없는 0부터 9까지의 숫자를 모두 찾아 더한 수를 return 하도록
+                solution 함수를
+                완성해주세요.
+            </p>
+            <hr>
+            <h3 class="t_tit2">제한사항
+            </h3>
+            <p class="t_desc2">
+                • 1 ≤ numbers의 길이 ≤ 9<br>
+                • 0 ≤ numbers의 모든 원소 ≤ 9<br>
+                • numbers의 모든 원소는 서로 다릅니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">입출력 예</h3>
+            <table class="t_table">
+                <thead>
+                    <tr>
+                        <th>numbers</th>
+                        <th>result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">[1,2,3,4,6,7,8,0]</td>
+                        <td style="text-align: center;">14</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">[5,8,4,0,6,7,9]</td>
+                        <td style="text-align: center;">6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class="t_box">
+                입출력 예 #1<br>
+
+                5, 9가 numbers에 없으므로, 5 + 9 = 14를 return 해야 합니다.<br>
+                입출력 예 #2<br>
+
+                1, 2, 3이 numbers에 없으므로, 1 + 2 + 3 = 6을 return 해야 합니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">문제 풀이</h3>
+            <p class="t_desc2">
+                includes : 메서드는 배열이 특정 요소를 포함하고 있는지 판별, numbers에 i가 없으면 answer에 더하기
+            </p>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(numbers) {
+    let answer = 0;
+    // 0 ~ 9까지 검사
+    for (let i = 0; i &lt;= 9; i++) {
+        // numbers에 i가 없으면 answer에 더하기
+        if (!numbers.includes(i)) {
+            answer += i;
+        }
+    }
+    return answer;
+}
+</code></pre>
+            </div>
+            <hr>
+            <h3 class="t_tit2">다른 사람의 풀이</h3>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(numbers) {
+    return 45 - numbers.reduce((cur, acc) => cur + acc, 0);
+}
+</code></pre>
+            </div>
+            <div class="t_link">
+                <a href="https://school.programmers.co.kr/learn/courses/30/lessons/86051">문제
+                    풀기</a>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../../assets/js/highlight.min.js"></script>
+    <script> hljs.highlightAll();</script>
+</body>
+
+</html>

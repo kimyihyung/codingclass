@@ -59,19 +59,13 @@
         <div class="slideContainer">
             <div class="slideWrap">
                 <div class="slide">
-                    <p>슬라이드내용1</p>
-                    <a href="#">
-                        <img src="assets/img/Untitled-1.jpg" alt="슬라이드이미지1">
-                    </a>
+                    <p>슬라이드내용1</p><a href="#"><img src="assets/img/Untitled-1.jpg" alt="슬라이드1"></a>
                 </div>
                 <div class="slide">
-                    <p>슬라이드내용2</p>
-                    <a href="#">
-                        <img src="assets/img/Untitled-2.jpg" alt="슬라이드이미지2">
-                    </a>
+                    <p>슬라이드내용2</p><a href="#"><img src="assets/img/Untitled-2.jpg" alt="슬라이드2"></a>
                 </div>
                 <div class="slide">
-                    <p>슬라이드내용3</p><a href="#"><img src="assets/img/Untitled-3.jpg" alt="슬라이드이미지3"></a>
+                    <p>슬라이드내용3</p><a href="#"><img src="assets/img/Untitled-3.jpg" alt="슬라이드3"></a>
                 </div>
             </div>
         </div>
@@ -122,20 +116,12 @@
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="assets/js/webD.js"></script>
     <script>
-        const sliderView = document.querySelector(".slideContainer");
-        const sliderInner = document.querySelector(".slideWrap");
-        const slider = document.querySelectorAll(".slide");
-
-        let count = 0;
-        let long = slider.length;
-
-        setInterval(() => {
-            sliderInner.style.translate = "-1200" * count + "px";
-            count++;
-            if (count >= long) {
-                count = 0;
-            }
-        }, 500);
+        setInterval(function () {
+            $('.slideWrap').animate({ 'marginTop': '-300px' }, function () {
+                $('.slide:first').appendTo('.slideWrap')
+                $('.slideWrap').css({ 'marginTop': '0px' })
+            })
+        }, 3000)
     </script>
 </body>
 

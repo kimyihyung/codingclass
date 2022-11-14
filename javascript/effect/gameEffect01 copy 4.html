@@ -734,7 +734,7 @@
         <!-- //memory__wrap -->
 
         <!-- tetris__wrap -->
-        <!-- <div class="tetris__wrap">
+        <div class="tetris__wrap">
             <div class="tetris__main">
                 <h2>Tetris Game</h2>
                 <p class="tetris-start">START</p>
@@ -742,7 +742,9 @@
             <div class="tetris__inner">
                 <div class="tetris__info">
                     <h2 class="tetris__score">테트리스 게임</h2>
+                    <!-- <p class="tetris__score">Score : <span>0</span></p> -->
                     <p class="tetris__line">Score : <span>0</span></p>
+                    <!-- <p class="tetris-close">Close</p> -->
                     <img class="tetris-close" src="../assets/img/close.svg" alt="">
                 </div>
                 <div class="tetris__play">
@@ -759,23 +761,6 @@
                 </div>
                 <div class="tetris__score"><span>0</span> 점</div>
                 <div class="restart__btn">RESTART</div>
-            </div>
-        </div> -->
-        <div class="tetris__wrap">
-            <div class="tetris__inner wrap">
-                <div class="tetris__btn">
-                    <div class="tetris__start">START</div>
-                    <!-- <div class="tetris__exit">종료</div> -->
-                    <img class="tetris__exit" src="../assets/img/close.svg" alt="">
-                </div>
-                <div class="tetris__play">
-                    <div class="playground">
-                        <p class="tetris__score"></p>
-                        <ul></ul>
-                    </div>
-                </div>
-                <div class="tetris__msg">
-                </div>
             </div>
         </div>
         <!-- //tetris__wrap -->
@@ -947,37 +932,17 @@
         });
     </script>
     <script>
-        // document.querySelector(".icon3").addEventListener("click", () => {
-        //     document.querySelector(".tetris__wrap").style.display = "block";
-        // });
-        // document.querySelector(".tetris-close").addEventListener("click", () => {
-        //     document.querySelector(".tetris__wrap").style.display = "none";
-        //     document.querySelector(".tetris__main").style.display = "block";
-        //     // document.querySelector(".tetris__inner").style.display = "none";
-        //     // document.querySelector(".tetris__info").style.display = "none";
+        document.querySelector(".icon3").addEventListener("click", () => {
+            document.querySelector(".tetris__wrap").style.display = "block";
+        });
+        document.querySelector(".tetris-close").addEventListener("click", () => {
+            document.querySelector(".tetris__wrap").style.display = "none";
+            document.querySelector(".tetris__main").style.display = "block";
+            // document.querySelector(".tetris__inner").style.display = "none";
+            // document.querySelector(".tetris__info").style.display = "none";
 
-        //     document.querySelector(".tetris__line span").innerHTML = 0;
-        //     document.querySelector(".tetris__score span").innerHTML = 0;
-        // });
-        const TetrisIcon = document.querySelector(".icon_box .icon3");
-        const TetrisGame = document.querySelector(".tetris__inner");
-        const tetrisWrapIndex = document.querySelector('.tetris__wrap');
-        const playground = document.querySelector('.playground');
-        const TetrisStart = document.querySelector('.tetris__start');
-        TetrisIcon.addEventListener("click", () => {
-            TetrisGame.classList.toggle("show");
-        })
-        TetrisStart.addEventListener("click", () => {
-            playground.style.display = "block";
-        })
-
-
-        TstartBtn.addEventListener("click", init);
-        document.querySelector('.tetris__wrap .tetris__exit').addEventListener('click', () => {
-            tetrisWrapIndex.classList.remove('show');
-            TetrisGame.classList.remove("show");
-            gameover = true;
-            TsoundBg.pause();
+            document.querySelector(".tetris__line span").innerHTML = 0;
+            document.querySelector(".tetris__score span").innerHTML = 0;
         });
     </script>
     <script>
