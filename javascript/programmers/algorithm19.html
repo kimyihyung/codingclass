@@ -45,17 +45,24 @@
             <hr>
             <h3 class="t_tit2">문제 풀이</h3>
             <p class="t_desc2">
-
+                배열로 정렬, 반환값이 문자열이기에 join
             </p>
             <div class="t_code">
-                <pre><code class="language-js">
-                
+                <pre><code class="language-js">function solution(s) {
+    return s.split('').sort().reverse().join('');
+}
 </code></pre>
             </div>
             <hr>
             <h3 class="t_tit2">다른 사람의 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(s) {
+  return s
+    .split("")
+    .sort()
+    .reverse()
+    .join("");
+}
 </code></pre>
             </div>
             <div class="t_link">

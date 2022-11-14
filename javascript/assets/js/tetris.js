@@ -230,7 +230,7 @@ function init() {
   for (let i = 0; i < rows; i++) {
     prependNewLine(); // 라인 만들기
   }
-  generateNewBlock(); // 블럭만들기
+  generateNewBlock(); // 블록만들기
 
   Tmsg.classList.remove("show");
 }

@@ -92,14 +92,14 @@
 }
 
 .tetris__msg {
-  width: 300px;
-  height: 100px;
+  width: 350px;
+  height: 500px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 58%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000;
   color: #fff;
   padding: 20px;
   font-size: 24px;
