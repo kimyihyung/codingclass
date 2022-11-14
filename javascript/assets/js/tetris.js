@@ -16,7 +16,7 @@ let tID = 0;
 let gameover = false;
 
 let Tsound = [
-  "../assets/audio/success.mp3",
+  "../assets/audio/tetris.mp3",
   "../assets/audio/match.mp3",
   "../assets/audio/unmatch.mp3",
 ];
@@ -297,14 +297,14 @@ function seizeBlock() {
     moving.classList.add("seized");
   });
 
-  // 겜 졌는가 판단
+  // 졌는지 유무
   checkLose();
 
   // 점수 계산
   checkMatch();
 }
 
-// 졌는가
+// 졌는지
 function checkLose() {
   const childNodes = Array.from(playGround.children)[0].querySelectorAll(
     "ul li"
@@ -334,7 +334,7 @@ function checkMatch() {
       TsoundMatch.play();
       duration = duration - 5;
 
-      tetrisScore.innerText = `점수 : ${Tscore}`;
+      tetrisScore.innerText = `SCORE : ${Tscore}`;
     }
   });
   generateNewBlock();
@@ -345,7 +345,7 @@ function generateNewBlock() {
     TsoundBg.pause();
     Tmsg.classList.add("show");
     Tmsg.innerHTML = `
-       ${Tscore}점
+       SCORE : ${Tscore}점
       `;
     TstartBtn.addEventListener("click", init);
     // TstartBtn.onclick(init);
