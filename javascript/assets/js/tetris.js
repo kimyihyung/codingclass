@@ -345,7 +345,7 @@ function generateNewBlock() {
     TsoundBg.pause();
     Tmsg.classList.add("show");
     Tmsg.innerHTML = `
-       SCORE : ${Tscore}점
+       SCORE : ${Tscore}
       `;
     TstartBtn.addEventListener("click", init);
     // TstartBtn.onclick(init);
