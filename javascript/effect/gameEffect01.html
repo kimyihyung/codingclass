@@ -996,33 +996,32 @@
         });
     </script>
     <script>
-        // 최상단에 위치
         // music__wrap
-        // sourceCont
+        // tetris__wrap
         // search__wrap
         // memory__wrap
         document.querySelector(".music__wrap").addEventListener("mousedown", () => {
             document.querySelector(".music__wrap").style.zIndex = 50;
-            //document.querySelector(".sourceCont").style.zIndex = 0;
+            document.querySelector(".tetris__wrap").style.zIndex = 0;
             document.querySelector(".search__wrap").style.zIndex = 0;
             document.querySelector(".memory__wrap").style.zIndex = 0;
         });
-        // document.querySelector(".sourceCont").addEventListener("mousedown", () => {
-        //     document.querySelector(".sourceCont").style.zIndex = 50;
-        //     document.querySelector(".music__wrap").style.zIndex = 0;
-        //     document.querySelector(".search__wrap").style.zIndex = 0;
-        //     document.querySelector(".memory__wrap").style.zIndex = 0;
-        // });
+        document.querySelector(".tetris__wrap").addEventListener("mousedown", () => {
+            document.querySelector(".tetris__wrap").style.zIndex = 50;
+            document.querySelector(".music__wrap").style.zIndex = 0;
+            document.querySelector(".search__wrap").style.zIndex = 0;
+            document.querySelector(".memory__wrap").style.zIndex = 0;
+        });
         document.querySelector(".search__wrap").addEventListener("mousedown", () => {
             document.querySelector(".search__wrap").style.zIndex = 50;
             document.querySelector(".music__wrap").style.zIndex = 0;
-            //document.querySelector(".sourceCont").style.zIndex = 0;
+            document.querySelector(".tetris__wrap").style.zIndex = 0;
             document.querySelector(".memory__wrap").style.zIndex = 0;
         });
         document.querySelector(".memory__wrap").addEventListener("mousedown", () => {
             document.querySelector(".memory__wrap").style.zIndex = 50;
             document.querySelector(".music__wrap").style.zIndex = 0;
-            //document.querySelector(".sourceCont").style.zIndex = 0;
+            document.querySelector(".tetris__wrap").style.zIndex = 0;
             document.querySelector(".search__wrap").style.zIndex = 0;
         });
     </script>

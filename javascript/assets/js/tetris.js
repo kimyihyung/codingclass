@@ -304,7 +304,7 @@ function seizeBlock() {
   checkMatch();
 }
 
-// 졌는지
+// 졌는지 확인
 function checkLose() {
   const childNodes = Array.from(playGround.children)[0].querySelectorAll(
     "ul li"
