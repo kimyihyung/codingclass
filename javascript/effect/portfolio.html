@@ -18,7 +18,7 @@
             bottom: 10px;
             width: 65px;
             height: 40px;
-            color: #dadada;
+            color: #fff;
             text-align: center;
             line-height: 40px;
             z-index: 100000;
@@ -51,6 +51,7 @@
             font-weight: 900;
             font-size: 20px;
             background-color: rgba(255, 255, 255, 0);
+            color: #F1EBEA;
         }
 
         .developer {
@@ -63,6 +64,7 @@
             z-index: 100000;
             font-weight: 900;
             font-size: 20px;
+            color: #F1EBEA;
         }
 
 
@@ -76,6 +78,7 @@
             font-weight: 900;
             font-size: 20px;
             background-color: rgba(255, 255, 255, 0);
+            color: #F1EBEA;
 
         }
 
@@ -88,15 +91,11 @@
         /* layout */
         #contents {}
 
-        #section1 {
-            background-color: #3A6440;
-            height: 213vh;
-        }
+        #section1 {}
 
         #section2 {
-            background-color: #EDF1EA;
-            height: 280vh;
-            color: #3A6440;
+            background-color: #F1EBEA;
+            height: 213vh;
         }
 
         #section3 {}
@@ -109,143 +108,200 @@
 
         /* sec1 */
         #section1 .sec1 {
-            background-color: #3A6440;
-            height: 213vh;
-            color: #EDF1EA;
+            background-color: #E94031;
+            height: 350vh;
+            color: #F1EBEA;
         }
 
-        #section1 .sec1_text2,
+
+        #section1 .sec1_text3,
+        .sec1_text2,
         .sec1_text1 {
-            font-family: "Golden";
-            font-size: 300px;
-            color: #EDF1EA;
+            font-family: "Inter";
+            font-size: 240px;
+            color: #000;
+            font-weight: 900;
+            z-index: 2;
         }
 
-        #section2 .sec1 {
-            position: relative;
+        .sec1_text7,
+        .sec1_text8,
+        .sec1_text9 {
+            font-family: "Inter";
+            font-size: 240px;
+            color: rgba(0, 0, 0, 0);
+            -webkit-text-stroke: 2px #000;
+            font-weight: 900;
+            z-index: 5;
         }
 
-        #section2 .sec1_text1 {
-            background: url(../assets/img/yi.jpg);
-            box-shadow: 0px 39px 40px -10px rgba(0, 0, 0, 0.4);
+        .sec1_text4 {
+            background: url(../assets/img/forest.png);
+            z-index: 1;
         }
 
-        #section2 .sec1_text2 {
-            font-family: "Golden";
-            font-size: 200px;
-            color: #3A6440;
+        .sec1_text5 {
+            font-size: 32px;
+            color: #fff;
+            z-index: 6;
+            font-family: "LINESeedKR";
+            font-weight: 500;
         }
 
-        #section2 .sec1_text3 {
-            font-family: "NanumMyeongjo";
-            font-size: 22px;
+        .sec1_text6 {
+            background: url(../assets/img/forest.png);
+            z-index: 4;
+            filter: brightness(50%);
         }
 
-        #section2 .sec1_text4 {
-            background: url(../assets/img/yi.jpg);
-            box-shadow: 0px 39px 40px -10px rgba(0, 0, 0, 0.4);
+        .sec2_text1 {
+            background: url(../assets/img/blue.png);
+            height: 200vh;
+            color: #F1EBEA;
+            z-index: 4;
         }
 
-        #section2 .sec1_text5 {
-            font-family: "Golden";
-            font-size: 200px;
-            color: #3A6440;
-        }
-
-        #section2 .sec1_text6 {
-            font-family: "NanumMyeongjo";
-            font-size: 22px;
+        .sec2_text2,
+        .sec2_text3 {
+            background: url(../assets/img/green.png);
+            height: 190vh;
+            color: #F1EBEA;
+            z-index: 4;
         }
     </style>
 </head>
 
 <body>
-    <!-- <div class="scrollTop">0</div> -->
+    <div class="scrollTop">0</div>
     <div id="contents">
-        <div class="portfolio" data-0="color: #EDF1EA" data-1630="color: #EDF1EA" data-1631="color: #3A6440"
-            data-2400="color: #3A6440">[
-            PORTFOLIO ]</div>
-        <div class="developer" data-0="color: #EDF1EA" data-1630="color: #EDF1EA" data-1631="color: #3A6440"
-            data-2400="color: #3A6440">
-            DEVELOPER</div>
-        <div class="menu" data-0="color: #EDF1EA" data-1630="color: #EDF1EA" data-1631="color: #3A6440"
-            data-2400="color: #3A6440">[ MENU ]
-        </div>
         <section id="section1">
             <div class="sec1">
-                <div class="sec1_text1 fixed_right"
-                    data-0="top: 25%; opacity:1; padding: 0px; right: 0%; width: 0px; transform: translate(0%, -50%)"
-                    data-100="top: 25%; opacity:1; padding: 0px; right: 30%; width: 125px; transform: translate(0%, -50%)"
-                    data-300="top: 25%; opacity:1; padding: 0px; right: 60%; width: 125px; transform: translate(0%, -50%)"
-                    data-500="top: 25%; opacity:1; padding: 1px; right: 100%; width: 0px; transform: translate(0%, -50%)"
-                    data-900="opacity:0;">
-                    Front&nbsp;End
-                </div>
-                <div class="sec1_text2 fixed_right"
-                    data-0="top: 70%; opacity:1; padding: 0px; left: -75%; width: 0px; transform: translate(0%, -50%)"
-                    data-100="top: 70%; opacity:1; padding: 0px; left: -45%; width: 125px; transform: translate(0%, -50%)"
-                    data-300="top: 70%; opacity:1; padding: 0px; left: -15%; width: 125px; transform: translate(0%, -50%)"
-                    data-500="top: 70%; opacity:1; padding: 1px; left: 25%; width: 0px; transform: translate(0%, -50%)"
-                    data-900="opacity:0;">
-                    Developer
-                </div>
-            </div>
-        </section>
-        <section id="section2">
-            <div class="sec1">
+                <div class="portfolio">[ PORTFOLIO ]</div>
+                <div class="developer">DEVELOPER</div>
+                <div class="menu">[ MENU ]</div>
                 <div class="sec1_text1 fixed"
-                    data-1700="top: 60%; left: 150%; width: 0%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-1850="top: 40%; left: 90%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2200="top: 60%; left: 10%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2400="top: 20%; left: -100%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;">
+                    data-0="top: 20%; opacity:1; padding: 0px; transform: translate(-50%, -50%)"
+                    data-100="top: 20%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 20%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 20%; opacity:1; padding: 1px;  transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: -15%;" data-2200="top: -35%;">
+                    WELCOME
                 </div>
                 <div class="sec1_text2 fixed"
-                    data-1700="top: 115%; left: 135%; width: 0%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-1850="top: 95%; left: 75%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2200="top: 115%; left: -5%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2400="top: 75%; left: -100%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;">
-                    About
+                    data-0="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-100="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 45%; opacity:1; padding: 1px; transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: 15%;" data-2200="top: -5%;" data-2300="top: -25%;">
+                    FRONTEND
                 </div>
-                <div class="sec1_text3 fixed"
-                    data-1700="top: 95%; left: 190%; width: 0%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-1850="top: 75%; left: 130%; width: 45%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-2200="top: 95%; left: 50%; width: 45%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-2400="top: 55%; left: -60%; width: 45%; height: 70vh; transform: translate(-50%, -50%);">
+                <div class=" sec1_text3 fixed"
+                    data-0="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-100="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 70%; opacity:1; padding: 1px; transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: 45%;" data-2200="top: 30%;" data-2300="top: -15%;">
+                    PORTFOLIO
+                </div>
+                <div class=" sec1_text7 fixed"
+                    data-0="top: 20%; opacity:1; padding: 0px; transform: translate(-50%, -50%)"
+                    data-100="top: 20%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 20%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 20%; opacity:1; padding: 1px;  transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: -15%;" data-2200="top: -25%;">
+                    WELCOME
+                </div>
+                <div class=" sec1_text8 fixed"
+                    data-0="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-100="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 45%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 45%; opacity:1; padding: 1px; transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: 15%;" data-2200="top: -5%;" data-2300="top: -25%;">
+                    FRONTEND
+                </div>
+                <div class=" sec1_text9 fixed"
+                    data-0="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-100="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-300="top: 70%; opacity:1; padding: 0px;  transform: translate(-50%, -50%)"
+                    data-500="top: 70%; opacity:1; padding: 1px; transform: translate(-50%, -50%)"
+                    data-2000="opacity:1;" data-2100="top: 45%;" data-2200="top: 25%;" data-2300="top: -15%;">
+                    PORTFOLIO
+                </div>
+                <!-- <div class=" sec1_text4 fixed"
+                    data-0="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(0%);"
+                    data-100="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(25%);"
+                    data-300="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(50%);"
+                    data-500="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(75%);"
+                    data-700="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(100%);">
+                </div> -->
+                <img src="../assets/img/forest.png" alt="" class="sec1_text4 fixed"
+                    data-0="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(0%); opacity: 1;"
+                    data-100="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(25%); opacity: 0.8;"
+                    data-300="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(50%);opacity: 0.6;"
+                    data-500="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(75%);opacity: 0.4;"
+                    data-700="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: brightness(100%);opacity: 0.2;"
+                    data-800="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; opacity: 0;"
+                    data-1000="width: 100%; height: 100vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; opacity: 0;">
+                <!-- <div class=" sec1_text5 fixed" data-700="background: #E94031;" data-900="background: #E94031;">
+                -->
+                <div class="sec1_text5 fixed"
+                    data-1000="top:200%; width: 100%; height: 50vh; transform: translate(-50%, -50%); "
+                    data-1200="top:75%; width: 100%; height: 50vh; transform: translate(-50%, -50%);"
+                    data-1400="top:50%; width: 100%; height: 50vh; transform: translate(-50%, -50%);"
+                    data-1600="top:25%; width: 100%; height: 50vh; transform: translate(-50%, -50%);"
+                    data-1800="top:-100%; width: 100%; height: 50vh; transform: translate(-50%, -50%); ">
                     웹에 관심이 많았던 저는 웹디자인을 배우는 과정에서 처음으로 코딩을 접하게 되었습니다. 배워보지도 못한 영역이라 처음엔 개념이 안 잡혀있어서 어려웠지만, 매일매일 메모장에 그날의
                     수업을 웹 수업 1일 차, 2일 차
                     이렇게 적어가며 네이버 클라우드에 저장해 집에서도 복습했습니다. 그렇게 배우다 보니 코딩의 매력에 빠져 퍼블리셔라는 직업을 알게 되었습니다. 웹에 관심이 많았던 저는 웹디자인을
                     배우는 과정에서 처음으로 코딩을 접하게
                     되었습니다. 배워보지도 못한 영역이라 처음엔 개념이 안 잡혀있어서 어려웠지만, 매일매일 메모장에 그날의 수업을 웹 수업 1일 차, 2일 차 이렇게 적어가며 네이버 클라우드에 저장해
-                    집에서도 복습했습니다.
-                </div>
-
-                <div class="sec1_text4 fixed"
-                    data-2400="top: 60%; left: 150%; width: 0%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2550="top: 40%; left: 90%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2900="top: 60%; left: 10%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-3100="top: 20%; left: -100%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;">
-                </div>
-                <div class="sec1_text5 fixed"
-                    data-2400="top: 115%; left: 135%; width: 0%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2550="top: 95%; left: 75%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-2900="top: 115%; left: -5%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;"
-                    data-3100="top: 75%; left: -100%; width: 30%; height: 70vh; transform: translate(-50%, -50%); background-size:cover; background-position:center;">
-                    About
+                    집에서도 복습했습니다. 그렇게
+                    배우다 보니 코딩의 매력에 빠져 퍼블리셔라는 직업을 알게 되었습니다. 웹에 관심이 많았던 저는 웹디자인을 배우는 과정에서 처음으로 코딩을 접하게 되었습니다. 배워보지도 못한
+                    영역이라 처음엔 개념이 안 잡혀있어서
+                    어려웠지만, 매일매일 메모장에 그날의 수업을 웹 수업 1일 차, 2일 차 이렇게 적어가며 네이버 클라우드에 저장해 집에서도 복습했습니다. 그렇게 배우다 보니 코딩의 매력에 빠져
+                    퍼블리셔라는 직업을 알게 되었습니다.
                 </div>
                 <div class="sec1_text6 fixed"
-                    data-2400="top: 95%; left: 190%; width: 0%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-2550="top: 75%; left: 130%; width: 45%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-2900="top: 95%; left: 50%; width: 45%; height: 70vh; transform: translate(-50%, -50%);"
-                    data-3100="top: 55%; left: -60%; width: 45%; height: 70vh; transform: translate(-50%, -50%);">
-                    웹에 관심이 많았던 저는 웹디자인을 배우는 과정에서 처음으로 코딩을 접하게 되었습니다. 배워보지도 못한 영역이라 처음엔 개념이 안 잡혀있어서 어려웠지만, 매일매일 메모장에 그날의
-                    수업을 웹 수업 1일 차, 2일 차
-                    이렇게 적어가며 네이버 클라우드에 저장해 집에서도 복습했습니다. 그렇게 배우다 보니 코딩의 매력에 빠져 퍼블리셔라는 직업을 알게 되었습니다. 웹에 관심이 많았던 저는 웹디자인을
-                    배우는 과정에서 처음으로 코딩을 접하게
-                    되었습니다. 배워보지도 못한 영역이라 처음엔 개념이 안 잡혀있어서 어려웠지만, 매일매일 메모장에 그날의 수업을 웹 수업 1일 차, 2일 차 이렇게 적어가며 네이버 클라우드에 저장해
-                    집에서도 복습했습니다.
+                    data-1000="top:180%; width: 30%; height: 30vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter:"
+                    data-1200="top:55%;  width: 30%; height: 30vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: "
+                    data-1400="top:30%;  width: 30%; height: 30vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: "
+                    data-1600="top:5%;   width: 30%; height: 30vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: "
+                    data-1800="top:-100%; width: 30%; height: 30vh; transform: translate(-50%, -50%); background-size:cover; background-position:center; filter: ">
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_text1 fixed"
+                    data-1900="top: 200%;   width: 100%;  transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2100="top: 75%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2200="top: 50%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2300="top: 25%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2300="top: -100%;  width: 100%;transform: translate(-50%, -50%); background-size:cover; background-position:center; ">
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_text2 fixed"
+                    data-2100="top: 200%;   width: 100%;  transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2200="top: 75%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2300="top: 50%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2400="top: 25%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2500="top: -100%;  width: 100%;transform: translate(-50%, -50%); background-size:cover; background-position:center; ">
+                </div>
+                <div class="sec2_text3 fixed"
+                    data-2200="top: 200%;   width: 100%;  transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2300="top: 75%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2400="top: 50%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2500="top: 25%;   width: 100%; transform: translate(-50%, -50%); background-size:cover; background-position:center; "
+                    data-2600="top: 20;  width: 100%;transform: translate(-50%, -50%); background-size:cover; background-position:center; ">
                 </div>
             </div>
         </section>
+        <!-- <section id="section2">
+            <div class="sec1">
+
+
+            </div>
+        </section> -->
+    </div>
     </div>
 
     <script src=" https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js">
