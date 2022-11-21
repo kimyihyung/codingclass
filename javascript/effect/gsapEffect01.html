@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #contents>section {
+        min-height: 100vh;
+    }
+
+    #section1 {
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    }
+
+    #section2 {
+        background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    }
+
+    #section3 {
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    #section4 {
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    }
+
+    #section5 {
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+
+    #section6 {
+        background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    }
+
+    .square {
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    }
+
+    .square2 {
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    }
+
+    .square.red {
+        background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+    }
+
+    .panel {
+        height: 100vh;
+        background-color: beige;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    .box-red {
+        background-color: red;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        transition: all 600ms ease-in-out;
+        background-color: tan;
+        color: #000;
+        text-align: center;
+
+    }
+
+    li {
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .not-active {
+        background: #fff;
+        color: red;
+    }
+</style>
+
+<body>
+    <!-- <main id="contents">
+        <section id="section1"></section>
+        <section id="section2">
+            <div class="square"></div>
+            <div class="square2"></div>
+        </section>
+        <section id="section3"></section>
+        <section id="section4"></section>
+        <section id="section5"></section>
+        <section id="section6"></section>
+    </main> -->
+    <nav>
+        <ul>
+            <li>about</li>
+            <li>work</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+
+    <div class="panel">
+        Tween | Timeline - A GSAP Tween or Timeline instance that should be controlled by the ScrollTrigger. Only one
+        animation
+        is controlled per ScrollTrigger, but you can wrap all your animations in a single Timeline (best) or create
+        multiple
+        ScrollTriggers if you prefer.
+    </div>
+    <div class="box"></div>
+    <div class="panel"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        ScrollTrigger.create({
+            trigger: ".panel",
+            start: "top 6%",
+            markers: true,
+            toggleClass: {
+                targets: "nav", className: "not-active"
+            },
+            onEnter: () => console.log("onEnter"),
+            onLeave: () => console.log("onLeave"),
+            onEnterBack: () => console.log("onEnterBack"),
+            onLeaveBack: () => console.log("onLeaveBack")
+        })
+    </script>
+    <script>
+        // gsap.to(".square", {
+        //     x: 1000,
+        //     duration: 3,
+        //     scrollTrigger: {
+        //         trigger: ".square",  //동작 시킬 것
+        //         start: "top 70%",
+        //         end: () => `+=${document.querySelector(".square").offsetHeight}`,    //square의 height 값을 늘리면 end의 값도 늘어남
+        //         markers: true,   //마커에 대한 컨트롤
+        //         toggleClass: "red"
+        //     },
+        // })
+
+        // toggleActions: "restart pause resume reset"
+        // onEnter   onLeave   onEnterBack   onLeaveBack
+        // play, pause, resume, reset, restart, complete, reverse, none
+
+        //스크롤 시 움직이는
+        //scrub: 4,    //true라고 쓰면 움직이는 대로 움직이고(부드럽지 않음), 숫자로 쓰면 움직임의 부드러움 정도
+        //scrub: true,
+
+        //핀은 고정 false는 넘너감.
+        // pin: true,
+        // pinSpacing: false,
+
+
+        //기본 애니메이션
+        // gsap.to(".square", {
+        //     x: 1000,
+        //     duration: 3,
+        //     scrollTrigger: {
+        //         trigger: ".square", //동작 시킬 것
+        //         start: "top 70%",
+        //         end: "top 30%",    //square의 height 값을 늘리면 end의 값도 늘어남
+        //         markers: {  //마커에 대한 컨트롤
+        //             startColor: "blue",
+        //             endColor: "purple",
+        //             fontSize: "30px"
+        //         },
+        //         toggleClass: "red",
+        //         toggleActions: "restart none none none",
+        //     },
+        // })
+
+        //타임라인
+        // gsap.to(".square", {
+        //     x: 1000,
+        //     duration: 2,
+        //     rotation: 100,
+        //     skewY: 1,
+        //     borderRadius: 0
+        // })
+        // gsap.to(".square", {
+        //     y: 500,
+        //     duration: 2,
+        //     rotation: 0,
+        //     skewY: 3,
+        //     borderRadius: 100,
+        //     delay: 2
+        // })
+        // gsap.to(".square", {
+        //     x: 0,
+        //     duration: 2,
+        //     rotation: 300,
+        //     skewY: 1,
+        //     width: 400,
+        //     delay: 4
+        // })
+        // gsap.to(".square", {
+        //     y: 0,
+        //     duration: 2,
+        //     rotation: 0,
+        //     width: 600,
+        //     delay: 6
+        // })
+
+        // const tl = gsap.timeline({ repeat: 2, yoyo: true }); //yoyo는 역으로 돌아가는, repeat는 반복 횟수
+        // tl.to(".square", {
+        //     x: 1000,
+        //     duration: 2,
+        //     rotation: 100,
+        //     skewY: 1,
+        //     ease: "elastic",
+        //     borderRadius: 0
+        // })
+        //     .to(".square", {
+        //         y: 500,
+        //         duration: 2,
+        //         rotation: 0,
+        //         skewY: 3,
+        //         ease: "elastic",
+        //         borderRadius: 100,
+        //     }, "-=1")
+        //     .to(".square", {
+        //         x: 0,
+        //         duration: 2,
+        //         rotation: 300,
+        //         skewY: 1,
+        //         ease: "elastic",
+        //         width: 400,
+        //     })
+        //     .to(".square", {
+        //         y: 0,
+        //         duration: 2,
+        //         rotation: 0,
+        //         ease: "elastic",
+        //         width: 100,
+        //     })
+
+        // const tl = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".square",
+        //         markers: true,
+        //         start: "top 80%",
+        //         end: "top 30%",
+        //         scrub: 1,
+        //     }
+        // })
+        // tl.to(".square", {
+        //     x: 1000,
+        //     duration: 2,
+        //     rotation: 100,
+        //     skewY: 1,
+
+        //     borderRadius: 0
+        // })
+        //     .to(".square", {
+        //         y: 500,
+        //         duration: 2,
+        //         rotation: 0,
+        //         skewY: 3,
+
+        //         borderRadius: 100,
+        //     }, "-=1")
+        //     .to(".square", {
+        //         x: 0,
+        //         duration: 2,
+        //         rotation: 300,
+        //         skewY: 1,
+
+        //         width: 400,
+        //     })
+        //     .to(".square", {
+        //         y: 0,
+        //         duration: 2,
+        //         rotation: 0,
+
+        //         width: 100,
+        //     })
+    </script>
+</body>
+
+</html>

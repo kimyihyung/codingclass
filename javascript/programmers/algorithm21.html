@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그래머스</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dracula.css">
+</head>
+2022.11.16
+
+<body>
+    <main id="main">
+        <div class="document">
+            <h2 class="t_tit">프로그래머스 1단계 - 가운데 글자 가져오기
+            </h2>
+            <p class="t_desc2">
+                단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">제한사항
+            </h3>
+            <p class="t_desc2">
+                • s는 길이가 1 이상, 100이하인 스트링입니다.
+            </p>
+            <hr>
+            <h3 class="t_tit2">입출력 예</h3>
+            <table class="t_table">
+                <thead>
+                    <tr>
+                        <th>s</th>
+                        <th>return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">"abcde"</td>
+                        <td style="text-align: center;">"c"</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">"qwer"</td>
+                        <td style="text-align: center;">"we"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <h3 class="t_tit2">문제 풀이</h3>
+            <div class="t_code">
+                <pre><code class="language-js">const length = s.length;
+    
+    if (length % 2 === 1) {
+        return s[Math.floor(length / 2)]
+    } else {
+        return s.slice(length / 2 - 1, length / 2 + 1)
+    }
+</code></pre>
+            </div>
+            <hr>
+            <h3 class="t_tit2">다른 사람의 풀이</h3>
+            <div class="t_code">
+                <pre><code class="language-js">function solution(s) {
+    return s.substr(Math.ceil(s.length / 2) - 1, s.length % 2 === 0 ? 2 : 1);
+}
+</code></pre>
+            </div>
+            <div class="t_link">
+                <a href="https://school.programmers.co.kr/learn/courses/30/lessons/12903">문제
+                    풀기</a>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:kimlh3743@gmail.com">kimlh3743@gmail.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../../assets/js/highlight.min.js"></script>
+    <script> hljs.highlightAll();</script>
+</body>
+
+</html>
