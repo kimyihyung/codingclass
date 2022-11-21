@@ -60,14 +60,21 @@
             <br>
             <hr>
             <h3 class="t_tit2">문제 풀이</h3>
+            <p class="t_desc2">acc = 콜백의 반환값을 누적. 콜백의 이전 반환값 또는, 콜백의 첫번째 호출이면서 initialValue를 제공한 경우에는 initialValue의 값
+            </p>
             <div class="t_code">
-                <pre><code class="language-js">s
+                <pre><code class="language-js">function solution(a, b) {
+    var answer = a.reduce((acc, cur, idx) => acc += cur*b[idx], 0)
+    return answer;
+}
 </code></pre>
             </div>
             <hr>
             <h3 class="t_tit2">다른 사람의 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(a, b) {
+    return a.reduce((acc, _, i) => acc += a[i] * b[i], 0);
+}
 </code></pre>
             </div>
             <div class="t_link">
