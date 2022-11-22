@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* -webkit-font-smoothing: antialiased; */
+}
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.scrollTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 65px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  z-index: 100000;
+  font-weight: bold;
+  font-size: 22px;
+}
+header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 2.5vh;
+  z-index: 100;
+  padding: 0 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* 섹션 */
+#section1 {
+  background: #f22511;
+  height: 5000vh;
+}
+.sec1 {
+  width: 98%;
+  height: 98vh;
+  background-image: url(../img/forest.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+.sec2_ani2 {
+  font-family: "Jost";
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8;
+  font-size: 15vw;
+  text-transform: uppercase;
+}

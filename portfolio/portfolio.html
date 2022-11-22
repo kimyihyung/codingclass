@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scrollTop">0</div>
+
+    <header>
+        <div>[ PORTFOLIO ]</div>
+        <div>[ MENU ]</div>
+    </header>
+
+    <section id="section1">
+        <div class="sec1 fixed" data-0="transform: translate(-50%, -50%) scale(0); filter: brightness(0%);"
+            data-1000="transform: translate(-50%, -50%) scale(1); filter: brightness(0%);"
+            data-5000="filter: brightness(100%);" data-7000="opacity:1" data-8000="opacity:0">
+        </div>
+        <div class="sec2 fixed">
+            <div class="sec2_ani1 fixed"></div>
+            <div class="sec2_ani2 fixed" data-1000="transform: translate(-50%, -50%) scale(180)"
+                data-7000="transform: translate(-50%, -50%) scale(1)">
+                <div>The</div>
+                <div>absolute</div>
+                <div>Best</div>
+                <div>Developer</div>
+            </div>
+        </div>
+    </section><!-- //section1 -->
+    <section id="section2"></section><!-- //section2 -->
+    <section id="section3"></section><!-- //section3 -->
+    <section id="section4"></section><!-- //section4 -->
+    <section id="section5"></section><!-- //section5 -->
+    <section id="section6"></section><!-- //section6 -->
+    <section id="section7"></section><!-- //section7 -->
+
+    <script src=" https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js">
+    </script>
+    <script>
+        const s = skrollr.init();
+
+        //재귀 함수
+        function scroll() {
+            let scrollTop = window.pageYoffest || document.documentElement.scrollTop || window.screenY;
+
+            document.querySelector(".scrollTop").innerText = Math.ceil(scrollTop);
+
+            // document.querySelector(".sec1_text2 em").style.filter = hueRotate(scrollTop+"deg");
+            // document.querySelector(".sec1_text2").style.fontWeight = scrollTop*50;
+
+            // if(scrollTop > 1300) document.querySelector(".sec1_text2").style.opacity = 0;
+            requestAnimationFrame(scroll);
+        }
+        scroll(); //함수 호출
+    </script>
+</body>
+
+</html>
