@@ -1,4 +1,12 @@
 @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,8 +35,7 @@
   font-size: 22px;
 }
 header {
-  font-family: "Inter";
-  font-weight: 900;
+  font-family: "LINESeedKR-Bd";
   width: 100%;
   display: flex;
   position: fixed;
