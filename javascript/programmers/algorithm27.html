@@ -65,13 +65,21 @@
             <hr>
             <h3 class="t_tit2">문제 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(absolutes, signs) {
+    let sum =0;
+    absolutes.forEach((num, idx)=>{
+        sum += signs[idx] ? num : -num
+    })
+    return sum;
+}
 </code></pre>
             </div>
             <hr>
             <h3 class="t_tit2">다른 사람의 풀이</h3>
             <div class="t_code">
-                <pre><code class="language-js">
+                <pre><code class="language-js">function solution(absolutes, signs) {
+    return absolutes.reduce((acc, val, i) => acc + (val * (signs[i] ? 1 : -1)), 0);
+}
 </code></pre>
             </div>
             <div class="t_link">
