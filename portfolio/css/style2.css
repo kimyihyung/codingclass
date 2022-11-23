@@ -1,3 +1,4 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +85,11 @@ header {
 }
 .sec2_ani4 {
   z-index: 3;
-  color: #000;
+  color: #fff;
   width: 70vh;
-  height: 50vh;
+  height: 70vh;
+  font-size: 22px;
+  color: #fff;
+  font-family: "nanumsquare";
+  font-weight: 500;
 }
