@@ -12,6 +12,7 @@
   transform: translate(-50%, -50%);
 }
 .scrollTop {
+  font-family: "Jost";
   position: fixed;
   right: 10px;
   bottom: 10px;
