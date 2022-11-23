@@ -80,7 +80,7 @@ header {
   background: url(../img/my_img.jpg);
   z-index: 1;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: 30vh;
   height: 38vh;
   transform: translate(-50%, -50%);
