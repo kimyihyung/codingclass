@@ -52,12 +52,22 @@ header {
   background-position: center center;
   background-repeat: repeat;
 }
-.sec2_ani2 {
-  font-family: "Jost";
+.sec2_ani1 {
+  font-family: "pretendard";
   font-weight: 900;
   color: #fff;
   text-align: center;
   line-height: 0.85;
   font-size: 15vw;
   text-transform: uppercase;
+}
+.sec2_ani2 {
+  font-family: "pretendard";
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 0.85;
+  font-size: 15vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #fff;
 }
