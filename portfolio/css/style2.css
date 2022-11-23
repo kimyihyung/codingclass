@@ -21,6 +21,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.fixed_right {
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
 .scrollTop {
   font-family: "Jost";
   position: fixed;
@@ -119,4 +124,13 @@ header {
   width: 0.6vw;
   height: 0vh;
   background: #000;
+}
+.sec2_ani7 {
+  color: #fff;
+  opacity: 1;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #fff;
+  font-family: "pretendard";
+  font-weight: 900;
+  font-size: 15vw;
 }
