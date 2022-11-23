@@ -65,10 +65,20 @@ header {
 .sec2_ani2 {
   font-family: "pretendard";
   font-weight: 900;
-  color: #fff;
   text-align: center;
   line-height: 0.85;
   font-size: 15vw;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #fff;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0);
+}
+.sec2_ani3 {
+  background: url(../img/my_img.jpg);
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  width: 30vh;
+  height: 38vh;
+  transform: translate(-50%, -50%);
 }
