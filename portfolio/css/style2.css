@@ -126,7 +126,7 @@ header {
   background: #000;
 }
 .sec2_ani7 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0);
   opacity: 1;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #fff;
