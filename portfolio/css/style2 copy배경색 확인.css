@@ -109,6 +109,7 @@ header {
   font-size: 13.5vw;
   font-family: "pretendard";
   font-weight: 900;
+  text-transform: uppercase;
 }
 .sec2_ani6 {
   background-color: rgba(255, 255, 255, 0.333);
