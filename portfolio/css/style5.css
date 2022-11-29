@@ -1,0 +1,126 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 초기 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* -webkit-font-smoothing: antialiased; */
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.fixed_right {
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+/* 스크롤 값 */
+.scrollTop {
+  font-family: "Jost";
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  width: 65px;
+  height: 40px;
+  color: #fff;
+  text-align: right;
+  line-height: 40px;
+  z-index: 100000;
+  font-weight: bold;
+  font-size: 2vh;
+}
+/* 헤더 */
+header {
+  font-family: "LINESeedKR-Bd";
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 2.5vh;
+  z-index: 100;
+  padding: 20px 30px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 100;
+}
+
+/* 섹션 */
+#section1 {
+}
+/* sec1 */
+.sec1 {
+  background: #786655;
+  height: 3000px;
+}
+.sec1_ani1 {
+  width: 98%;
+  height: 98vh;
+  background: url(../img/forest.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+.sec1_ani2 {
+  font-family: "pretendard";
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 0.85;
+  font-size: 13vw;
+  text-transform: uppercase;
+}
+.sec1_ani3 {
+  font-family: "pretendard";
+  font-weight: 900;
+  text-align: center;
+  line-height: 0.85;
+  font-size: 13vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #fff;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0);
+}
+.sec1_ani4 {
+  background: url(../img/my_img-min.jpg);
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  width: 30vh;
+  height: 38vh;
+  transform: translate(-50%, -50%);
+}
+.sec1_ani5 {
+  z-index: 3;
+  color: #fff;
+  width: 120vh;
+  font-size: 1.8vw;
+  font-family: "nanumsquare";
+  font-weight: 500;
+  text-align: center;
+}
+.sec1_ani6 {
+  font-size: 10vw;
+  font-family: "pretendard";
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3a6440;
+}
+/* sec2 */
+.sec2 {
+  background: #93906c;
+  height: 5000px;
+}
