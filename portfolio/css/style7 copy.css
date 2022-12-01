@@ -27,12 +27,7 @@
   top: 55%;
   transform: translate(-50%, -50%);
 }
-.fixed_s {
-  position: fixed;
-  display: flex;
-  left: 0;
-  top: 25%;
-}
+
 /* 스크롤 값 */
 .scrollTop {
   font-family: "Jost";
@@ -95,6 +90,17 @@ header {
   display: flex;
   justify-content: center;
 }
+/* .sec1_ani3 {
+  font-family: "pretendard";
+  font-weight: 900;
+  text-align: center;
+  line-height: 0.85;
+  font-size: 13vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #fff;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0);
+} */
 .sec1_ani4 {
   background: url(../img/my_img-min.jpg);
   background-size: cover;
@@ -123,13 +129,15 @@ header {
   text-transform: uppercase;
   color: #3a6440;
 }
-.sec1_ani7 {
+/* .sec1_ani7 {
   font-size: 10vw;
   font-family: "pretendard";
   font-weight: 900;
   text-transform: uppercase;
-  color: #93906c;
-}
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2px #3a6440;
+} */
+
 /* sec2 */
 .sec2 {
   background: #93906c;
@@ -137,7 +145,7 @@ header {
 }
 .sec3 {
   background: #3a6440;
-  height: 7000px;
+  height: 5000px;
 }
 
 /* section2 */
@@ -145,29 +153,82 @@ header {
   width: 400vw;
   height: 100vh;
   background-color: #3a6440;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 25%;
+  opacity: 0;
+  z-index: 4;
 }
 
 .box {
   width: 100vw;
 }
 
-.sec_ani {
+.section2__info {
   width: 100%;
-  display: flex;
 }
-.sec_ani img {
-  margin: 1vw;
-  width: 33vw;
+.section2__info img {
+  width: 30vw;
 }
 
-.sec_ani h3 {
+@keyframes base {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes jjan {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mystroy {
+  width: 40vw;
+}
+
+.section2__info h3 {
   font-size: 5vw;
   font-family: "pretendard";
   font-weight: 900;
   margin: 1.5vw 0;
 }
-.sec_ani p {
+.section2__info p {
   font-family: "nanumsquare";
   margin: 2vw 0;
   font-size: 1.7vw;
+}
+.mystroy ul li {
+  font-size: 1vw;
+  width: 20vw;
+  word-break: keep-all;
 }
