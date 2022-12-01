@@ -130,12 +130,12 @@ header {
 .sec3 {
   width: 5000vh;
   height: 100%;
-  background: rgb(174, 74, 74);
+  background: #000;
 }
 .sec3_ani1 {
   width: 100vh;
   height: 90vh;
-  background: #fff;
+  background: url(../img/site1.png);
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
@@ -143,7 +143,24 @@ header {
 .sec3_ani2 {
   width: 100vh;
   height: 90vh;
-  background: #fff;
+  background: url(../img/site2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+.sec3_ani1-1 {
+  font-family: "pretendard";
+  font-weight: 900;
+  color: rgb(13, 68, 26);
+  text-align: center;
+  line-height: 0.85;
+  font-size: 13vw;
+  text-transform: uppercase;
+}
+.sec3_ani3 {
+  width: 100vh;
+  height: 90vh;
+  background: url(../img/site2.png);
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
