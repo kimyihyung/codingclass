@@ -152,7 +152,7 @@ header {
 }
 
 .sec_ani {
-  width: 100%;
+  width: 100vh;
   display: flex;
 }
 .sec_ani img {
