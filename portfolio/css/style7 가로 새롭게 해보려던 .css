@@ -37,8 +37,8 @@
 .scrollTop {
   font-family: "Jost";
   position: fixed;
-  right: 3vh;
-  bottom: 1.5vh;
+  right: 30px;
+  bottom: 10px;
   width: 65px;
   height: 40px;
   color: #fff;
@@ -59,8 +59,7 @@ header {
   color: #fff;
   font-size: 2.5vh;
   z-index: 100;
-  padding: 2vh 3vh;
-  /* padding: 20px 30px; */
+  padding: 20px 30px;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
   z-index: 100;
@@ -70,19 +69,19 @@ header {
 #section1 {
 }
 /* sec1 */
-#section1 .sec1 {
+.sec1 {
   background: #786655;
   height: 7000px;
 }
-#section1 .sec1_ani1 {
+.sec1_ani1 {
   width: 98%;
-  height: 97.5vh;
+  height: 98vh;
   background: url(../img/forest.png);
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
 }
-#section1 .sec1_ani2 {
+.sec1_ani2 {
   font-family: "pretendard";
   font-weight: 900;
   color: #fff;
@@ -92,11 +91,11 @@ header {
   z-index: 1;
   text-transform: uppercase;
 }
-#section1 .sec1_ani2_c {
+.sec1_ani2_c {
   display: flex;
   justify-content: center;
 }
-#section1 .sec1_ani4 {
+.sec1_ani4 {
   background: url(../img/my_img-min.jpg);
   background-size: cover;
   background-position: center center;
@@ -104,7 +103,7 @@ header {
   height: 22vw;
   transform: translate(-50%, -50%);
 }
-#section1 .sec1_ani5 {
+.sec1_ani5 {
   color: #fff;
   width: 120vh;
   font-size: 1.8vw;
@@ -112,19 +111,19 @@ header {
   font-weight: 500;
   text-align: center;
 }
-#section1 .sec1_ani5_1 {
+.sec1_ani5_1 {
   width: 120vh;
   position: fixed;
   left: 50%;
 }
-#section1 .sec1_ani6 {
+.sec1_ani6 {
   font-size: 10vw;
   font-family: "pretendard";
   font-weight: 900;
   text-transform: uppercase;
   color: #3a6440;
 }
-#section1 .sec1_ani7 {
+.sec1_ani7 {
   font-size: 10vw;
   font-family: "pretendard";
   font-weight: 900;
@@ -132,13 +131,13 @@ header {
   color: #93906c;
 }
 /* sec2 */
-#section1 .sec2 {
+.sec2 {
   background: #93906c;
   height: 5000px;
 }
-#section1 .sec3 {
+.sec3 {
   background: #3a6440;
-  height: 6500px;
+  height: 7000px;
 }
 
 /* section2 */
@@ -152,22 +151,22 @@ header {
   width: 100vw;
 }
 
-#section2 .sec_ani {
+.sec_ani {
   width: 100vh;
   display: flex;
 }
-#section2 .sec_ani img {
+.sec_ani img {
   margin: 1vw;
   width: 33vw;
 }
 
-#section2 .sec_ani h3 {
+.sec_ani h3 {
   font-size: 5vw;
   font-family: "pretendard";
   font-weight: 900;
   margin: 1.5vw 0;
 }
-#section2 .sec_ani p {
+.sec_ani p {
   font-family: "nanumsquare";
   margin: 2vw 0;
   font-size: 1.7vw;
