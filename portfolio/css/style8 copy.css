@@ -115,14 +115,14 @@ header {
 }
 #section1 .sec1_ani5 {
   color: #fff;
-  width: 125vh;
+  width: 120vh;
   font-size: 1.8vw;
   font-family: "nanumsquare";
   font-weight: 500;
   text-align: center;
 }
 #section1 .sec1_ani5_1 {
-  width: 125vh;
+  width: 120vh;
   position: fixed;
   left: 50%;
 }
@@ -153,14 +153,12 @@ header {
 }
 
 #section2 .sec_ani {
-  margin-left: 50vh;
   width: 100vh;
   display: flex;
 }
 #section2 .sec_ani img {
   margin: 1vw;
   width: 33vw;
-  border: 5px solid #000;
 }
 
 #section2 .sec_ani h3 {
@@ -186,6 +184,7 @@ header {
   text-align: center;
   line-height: 0.85;
   font-size: 13vw;
+  z-index: 1;
   text-transform: uppercase;
 }
 #section3 .sec1_ani2 {
@@ -202,73 +201,55 @@ header {
 
 /* #section3 이미지 */
 #section3 .sec1_ani3 {
-  background: url(../img/html.jpg);
+  background: url(../img/site2.png);
   background-size: cover;
   background-position: center center;
   width: 17vw;
   height: 22vw;
-  z-index: 1;
-  border: 5px solid #000;
 }
 #section3 .sec1_ani4 {
-  background: url(../img/html.jpg);
+  background: url(../img/site2.png);
   background-size: cover;
   background-position: center center;
   width: 17vw;
   height: 22vw;
-  z-index: 1;
-  border: 5px solid #000;
 }
 #section3 .sec1_ani5 {
-  background: url(../img/html.jpg);
+  background: url(../img/site2.png);
   background-size: cover;
   background-position: center center;
   width: 17vw;
   height: 22vw;
-  z-index: 1;
-  border: 5px solid #000;
 }
 #section3 .sec1_ani6 {
-  background: url(../img/html.jpg);
+  background: url(../img/site2.png);
   background-size: cover;
   background-position: center center;
   width: 17vw;
   height: 22vw;
-  z-index: 1;
-  border: 5px solid #000;
 }
 #section3 .sec1_ani7 {
-  color: #fff;
-  width: 125vh;
-  font-size: 1.4vw;
-  font-family: "nanumsquare";
-  font-weight: 300;
-  text-align: left;
+  background: url(../img/site2.png);
+  background-size: cover;
+  background-position: center center;
+  width: 17vw;
+  height: 22vw;
 }
 
 /* #section3 글 */
-.ani1_La {
+.sec1_ani7_1 {
   font-family: "pretendard";
   font-weight: 900;
   color: #000;
   text-align: center;
-  font-size: 5vw;
-  z-index: 3;
+  font-size: 9vw;
+  z-index: 1;
   text-transform: uppercase;
 }
-
-.ani1_Sm {
+.sec1_ani7_2 {
   color: #000;
   font-size: 1.8vw;
-  width: 17vw;
   font-family: "nanumsquare";
   font-weight: 500;
   text-align: center;
-  z-index: 3;
-}
-
-#section4 .sec1 {
-  background: #000;
-  width: 200vw;
-  height: 100vh;
 }
