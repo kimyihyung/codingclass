@@ -298,7 +298,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
-  z-index: 3;
+  z-index: 6;
 }
 #section4 .sec2_ani2 {
   font-family: "pretendard";
@@ -307,7 +307,7 @@ header {
   text-align: center;
   line-height: 0.85;
   font-size: 13vw;
-  z-index: 4;
+  z-index: 7;
   text-transform: uppercase;
 }
 
